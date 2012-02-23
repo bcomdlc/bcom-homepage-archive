@@ -83,6 +83,8 @@ do
     git commit -q -m"Automatic update." $lf
 done
 
+git push -q origin master
+
 _END_TIME=`date +%s`
 _RUN_TIME=`expr $_END_TIME - $_START_TIME`
 echo Finished in ${_RUN_TIME}s | $LOGGER
