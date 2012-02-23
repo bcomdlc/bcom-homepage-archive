@@ -80,7 +80,7 @@ do
     lf="www.boston.com$uri/index.html"
     wget -q "http://www.boston.com/$uri" -O $lf
     git add $lf
-    git --quiet commit -m"Automatic update." $lf
+    git commit -q -m"Automatic update." $lf
 done
 
 _END_TIME=`date +%s`
