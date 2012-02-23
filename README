@@ -1,0 +1,6 @@
+Boston.com Homepage Archive
+===========================
+
+This is an experimental process that will grab a copy of the
+boston.com homepage every X minutes and commit it. The intent is to
+provide an interface to changes in the homepage over time.

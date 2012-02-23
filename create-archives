@@ -1,0 +1,90 @@
+#!/bin/sh
+
+# ----------------------------------------------------------------------
+# create-archives - 
+# ----------------------------------------------------------------------
+
+PATH=/usr/bclocal/bin:/usr/bin:/bin
+VERSION=0.1
+
+ME=`basename "$0"`
+LOGGER="logger -t $ME"
+
+VERBOSE=
+HELP=
+NOOP=
+
+# Automatically prefixed by http://www.boston.com
+URIs="
+/
+/news/politics
+/sports
+/sports/baseball/redsox
+"
+
+# ----------------------------------------------------------------------
+# Parse options
+# ----------------------------------------------------------------------
+while getopts Vhnv o
+do
+    case $o in
+        # Version info
+        V) echo "$ME v$VERSION" ; exit ;;
+
+        # Usage
+        h) HELP=1 ;;
+
+        # No-op mode
+        n) NOOP=echo ;;
+
+        # Verbose
+        v) VERBOSE=1 ;;
+    esac
+done
+
+shift `expr $OPTIND - 1`
+
+# ----------------------------------------------------------------------
+# Generate usage/help info
+# ----------------------------------------------------------------------
+if [ x$HELP = x1 ]
+then
+    echo "$ME -  (v$VERSION)"
+    echo 
+    echo "Usage:"
+    echo 
+    echo "  $ $ME [-h] [-V] [-v] [-n]"
+    echo 
+    echo Parameters:
+    echo 
+    echo "  -h      This help."
+    echo "  -V      Print '$ME v$VERSION' and exit"
+    echo "  -n      Dry run"
+    echo "  -v      Verbose operation"
+    echo 
+    echo 
+
+    exit
+
+fi
+
+
+# ----------------------------------------------------------------------
+# Start the work
+# ----------------------------------------------------------------------
+echo Started by $LOGNAME | $LOGGER
+_START_TIME=`date +%s`
+
+for uri in $URIs
+do
+    lf="www.boston.com$uri/index.html"
+    wget -q "http://www.boston.com/$uri" -O $lf
+    git add $lf
+    git --quiet commit -m"Automatic update." $lf
+done
+
+_END_TIME=`date +%s`
+_RUN_TIME=`expr $_END_TIME - $_START_TIME`
+echo Finished in ${_RUN_TIME}s | $LOGGER
+
+
