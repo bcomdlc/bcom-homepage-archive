@@ -80,7 +80,7 @@ do
     lf="www.boston.com$uri/index.html"
     wget -q "http://www.boston.com/$uri" -O $lf
     git add $lf
-    git commit -q -m"Automatic update." $lf
+    git commit -q -m"Automatic update to http://$lf." $lf
 done
 
 git push -q origin master
