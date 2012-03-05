@@ -1245,6 +1245,45 @@ var parentKey = [ new ForumKey("Cat:SportsForum:81df60f3-70ee-4ca3-9336-8cf2c0a8
 	<div id="Col3">
 	    
 
+<div class="dotted4px"><img src="http://cache.boston.com/universal/site_graphics/spcr.gif"
+                            class="spcrGif" alt="" /></div>
+<h3 class="sectionHeader">The Pulse/Boston Red Sox</h3>
+<div class="padTop4"></div>
+<b>The Pulse</b> on Boston.com analyzes social sentiment on Twitter. Below is real-time analysis of how people using Twitter feel about the Red Sox. #pulseredsox
+<div class="padTop10"></div>
+<script src="http://www.pointslocal.com/includes/js/raphael/raphael-min.js"></script>
+<script src="http://www.pointslocal.com/includes/js/geosocial/geosocial-widgets-unity-slim.js"></script>
+<script src="http://www.pointslocal.com/includes/js/geosocial/geosocial-widgets-meter.js"></script>
+<div id="pats-social-stats">
+<b>Social Pulse Now</b>
+<div id="pats-social-stats-count"></div>
+<div>Updates every 10 seconds</div>
+</div>
+<div id="pats-meter-alone" style="width:329px;height:100px;"></div>
+<script type="text/javascript">
+$(document).ready(function() {
+	var widgetOptions = {
+		backgroundColor: 'none',
+		loadOnColor: '#55d6f3',
+		loadOffColor: '#f2f2f2',
+		profile: 'celtics'
+	}
+	var widgetMeter = new PLSocial('pats-meter-alone',widgetOptions);
+	widgetMeter.setOptions(widgetOptions);
+	widgetMeter.callbackFunction = function() {
+		$('#pats-social-stats-count').html('Total tweets: ' + this.formatNumber(this.meterCount) + ' with sentiment (last 5 minutes)');
+	};
+	widgetMeter.widgetMeter();
+});
+</script>
+<div class="cf"></div>
+<div class="padTop10"></div>
+<div class="dotted1px"><img src="http://cache.boston.com/universal/site_graphics/spcr.gif"
+                            class="spcrGif" alt="" /></div>
+<div class="padTop10"></div>
+
+	    
+
 
 
 
