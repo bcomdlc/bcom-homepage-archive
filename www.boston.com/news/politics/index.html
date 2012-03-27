@@ -79,7 +79,7 @@ var site=document.URL.toLowerCase().match(/s_campaign=(\w+)/);
   else
     {campaign=site[1]};
 OAS_sitepage='www.boston.com/news/politics/homepage';
-OAS_listpos='TOP,INTRO,BOTTOM,POPUP,POPUN,EXTRA,BILLBOARD,SPONSOR,SPONSOR1,SPONSOR2,SPONSOR3,SPONSOR4,SPONSOR5,SPONSOR6,MISC1,MISC2,MISC3,MISC4,MISC5,CENTRAL,FEATURE,RIGHT1';
+OAS_listpos='TOP,INTRO,BOTTOM,RIGHT4,POPUP,POPUN,EXTRA,BILLBOARD,SPONSOR,SPONSOR1,SPONSOR2,SPONSOR3,SPONSOR4,SPONSOR5,SPONSOR6,MISC1,MISC2,MISC3,MISC4,CENTRAL,FEATURE,RIGHT1';
 oasquery='pagetype=section_folder&RM_Exclude=exclude_section_folder&s_campaign='+campaign;if(typeof OAS_query=='undefined'||!OAS_query)OAS_query=oasquery;else OAS_query+='&'+oasquery;
 OAS_url='http://rmedia.boston.com/RealMedia/ads/';OAS_target='_top';OAS_version=10;OAS_rn='001234567890';OAS_rns='1234567890';OAS_rn=new String(Math.random());OAS_rns=OAS_rn.substring(2, 11);
 //--></script><script language="JavaScript1.2"><!--
@@ -351,6 +351,7 @@ OAS_AD('CENTRAL');
 
 
 <div class="tcCentered">
+<div class="tcCenter">
 <!-- Section front Brightcove player -->
 <object id="myExperience" class="BrightcoveExperience">
   <param name="bgcolor" value="#FFFFFF" />
@@ -364,24 +365,24 @@ OAS_AD('CENTRAL');
   <param id="adServerURL_8358" name="adServerURL" value="" />
   <param name="escapeAdRequest" value="false" />
   <param name="dynamicStreaming" value="true" />
+  <script type="text/javascript">var OAS_adServerURL = "http://rmedia.boston.com/RealMedia/ads/adstream_sx.ads/" + OAS_sitepage + "/@VIDEO?"; document.getElementById("adServerURL_8358").value = OAS_adServerURL; brightcove.createExperiences();</script>
 </object>
-<script type="text/javascript">var OAS_adServerURL = "http://rmedia.boston.com/RealMedia/ads/adstream_sx.ads/" + OAS_sitepage + "/@VIDEO?"; document.getElementById("adServerURL_8358").value = OAS_adServerURL; brightcove.createExperiences();</script>
 <div id="externalBanner">
   <!-- Tremor Companion Banner Container -->
-  <div id="adCompanionBanner" style="visibility:hidden;z-index:500;top:225px;"></div>
+  <div id="adCompanionBanner" style="visibility:hidden;position:absolute;z-index:500;top:225px;"></div>
   <!-- Acudeo companion banner loader script -->
-  <script type="text/javascript" src="http://objects.tremormedia.com/embed/js/banners.js"></script>
+  <script type="text/javascript" src="http://cache.boston.com/universal/js/companionBanners.js"></script>
   <script type="text/javascript">
       function displayCompanionBanners(banners) {
           tmDisplayBanner(banners, "adCompanionBanner", 300, 250);
-          document.getElementById('rightAd').style.visibility = "hidden";
+          document.getElementById('rightAd').style.display = 'none';
       }
       function hideCompanionBanners(banners) {
           tmHideBanner("adCompanionBanner");
-          document.getElementById('rightAd').style.visibility = "visible";
+          document.getElementById('rightAd').style.display = 'inline';
       }
   </script>
-</div>
+</div></div>
 </div>
 <div class="padTop10"></div>
 <div id="twitter_div">
@@ -710,7 +711,7 @@ OAS_AD('FEATURE');
 		<p class="bigNumberStatus"><span class="bigNumberStatusLabel">Current status:</span> The governor is in Massachusetts after a year of travel promoting the state, his book, President Obama, and enjoying personal leave.</p>
 	
 	
-	<!-- Published March 27, 2012 at 12:16 pm -->
+	<!-- Published March 27, 2012 at 12:31 pm -->
 	
 </div>
 
@@ -753,8 +754,8 @@ OAS_AD('FEATURE');
     <div class="padTop10"></div>
 
     <div class="img100h3Left"><h3><a
-    href="http://www.boston.com/news/nation/washington/articles/2012/03/27/justices_take_up_heart_of_health_care_overhaul_law/">Justices take up heart of health care overhaul law</a></h3><div class="tt">
-<span>The Supreme Court is taking up the key question in the challenge to President Barack Obama's historic health care overhaul: Can the government force people to carry insurance or pay a penalty?</span>  <span class="attr">(AP)</span></div><div
+    href="http://www.boston.com/news/nation/washington/articles/2012/03/27/justices_take_up_heart_of_health_care_overhaul_law/">Conservative justices question insurance mandate</a></h3><div class="tt">
+<span>Conservative justices on Tuesday sharply questioned whether the government can force Americans to carry health insurance, wondering in arguments over President Barack Obama's health care overhaul if Congress might next force people to buy broccoli or burial insurance.</span>  <span class="attr">(AP)</span></div><div
     class="cf"></div></div>
 
     
@@ -929,9 +930,11 @@ OAS_AD('FEATURE');
 </div>
 <div><div class="padTop10"></div>
 </div>
-<div class="padBottom10"><div class="h3TG"><h3><a href="http://www.boston.com/news/politics/articles/2012/03/27/nyc_rep_rangel_to_pay_fine_over_rent_law_misuse/">NYC Rep. Rangel to pay fine over rent law misuse</a></h3><div class="tt"><span>Congressman Charles Rangel and his campaign have agreed to pay $23,000 stemming from his use of a rent-stabilized apartment in New York City as a campaign office.</span>  <span class="attr">(AP, 6:59 a.m.)</span></div></div>
+<div class="padBottom10"><div class="h3TG"><h3><a href="http://www.boston.com/news/politics/articles/2012/03/27/gingrich_says_campaign_must_keep_tight_budget/">Gingrich says campaign must keep tight budget</a></h3><div class="tt"><span>Former House Speaker Newt Gingrich says his campaign will have to stay on a tight budget to make it to the convention.</span>  <span class="attr">(Associated Press, 12:19 p.m.)</span></div></div>
 </div>
-<div class="padBottom10"><div class="h3TG"><h3><a href="http://www.boston.com/news/nation/washington/articles/2012/03/27/govt_report_dc_nuke_blast_wouldnt_destroy_city/">Gov't report: DC nuke blast wouldn't destroy city</a></h3><div class="tt"><span>Hollywood has destroyed Washington -- or New York or Los Angeles -- lots of times with nuclear bombs detonated by terrorists. It turns out to be harder in real life.</span>  <span class="attr">(Associated Press, 3:49 a.m.)</span></div></div>
+<div class="padBottom10"><div class="h3TG"><h3><a href="http://www.boston.com/news/politics/articles/2012/03/27/obamas_uncle_enters_plea_in_drunken_driving_case_1332863901/">Obama uncle admits facts in drunken driving case</a></h3><div class="tt"><span>A Massachusetts drunken driving charge against President Barack Obama's uncle will be dismissed if he stays out of trouble for a year.</span>  <span class="attr">(Associated Press, 12:28 p.m.)</span></div></div>
+</div>
+<div class="padBottom10"><div class="h3TG"><h3><a href="http://www.boston.com/news/politics/articles/2012/03/27/obamas_uncle_enters_plea_in_drunken_driving_case/">Obama's uncle enters plea in drunken driving case</a></h3><div class="tt"><span>President Barack Obama's uncle has entered a plea to drunken driving charges in Massachusetts that acknowledges prosecutors have enough evidence to convict him.</span>  <span class="attr">(Associated Press, 11:58 a.m.)</span></div></div>
 </div>
 <div><div class="padTop10"></div>
 </div>
@@ -1036,9 +1039,7 @@ OAS_AD('MISC3');
 <script language="JavaScript"><!--
 OAS_AD('MISC4');
 //--></script>
-<script language="JavaScript"><!--
-OAS_AD('MISC5');
-//--></script>
+
 
 
 
