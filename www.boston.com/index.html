@@ -116,7 +116,7 @@ mboxCreate('bc_globalMbox','mboxPageValue=1.97','pageType=homepage','path='+loca
                      <!--passthru-->
                      
                      Apr. 23, 2012<!--passthru-->
-                     <div id="hpUpdate">Updated: 11:57 PM</div>
+                     <div id="hpUpdate">Updated: 12:13 AM</div>
 
 
                    </div>
@@ -164,7 +164,7 @@ mboxCreate('bc_globalMbox','mboxPageValue=1.97','pageType=homepage','path='+loca
                           class="imageLink"><img src="http://cache.boston.com/bonzai-fba/Site_Graphic/2012/04/20/earth_day_logo__1334939291_5636.jpg" title="Earth Day 2012 events in Boston and beyond" height="132" width="385" alt="Earth Day 2012 events in Boston and beyond" border="0" /></a></div></div>
                  <div class="headerRight">
                    <!--passthru--><div id="homepageHeaderDeal">
-<a data-posn="Header" data-posntwo="logo" data-campaign="s" id="HomepageHeaderDealHeader" href="http://deals.boston.com/deal/8886/the-company-theatre-norwell">Boston Deals</a>The Company Theatre: $20 for one ticket to &#8220;The Honky Tonk Angels&#8221; (wo...<div id="hompeageHeaderGet"><a data-posn="Header" data-posntwo="link" data-campaign="s" href="http://deals.boston.com/deal/8886/the-company-theatre-norwell">Get this deal</a></div>
+<a data-posn="Header" data-posntwo="logo" data-campaign="s" id="HomepageHeaderDealHeader" href="http://deals.boston.com/deal/9073/boston-inspirational-women-bill-brett">Boston Deals</a>A Mother&#8217;s Day special: $30 for one copy of &#8220;Boston, Inspirational Wom...<div id="hompeageHeaderGet"><a data-posn="Header" data-posntwo="link" data-campaign="s" href="http://deals.boston.com/deal/9073/boston-inspirational-women-bill-brett">Get this deal</a></div>
 </div>
 
                  </div>
@@ -816,7 +816,81 @@ mboxCreate('bc_globalMbox','mboxPageValue=1.97','pageType=homepage','path='+loca
 </li></ul></div>
 
             </div>
-            <div id="hp_bgcom"><!--passthru-->
+            <div id="hp_bgcom">
+                <!-- Free Trial Countdown -->
+                 <div id="bcom-hp-globe-free">
+                    <script type="text/javascript" src="http://cache.boston.com/multimedia/templates/tools/scripts/jquery.countdown.min.js" ></script>
+                    <!--passthru-->
+                    <script>var bcom_date_right_now = ("22|23|56|51");</script>
+                    <script>
+                      var bcom_date_right_now = bcom_date_right_now.split('|'),
+                      day_right_now = parseInt(bcom_date_right_now[0]),
+                      hour_right_now = parseInt(bcom_date_right_now[1]),
+                      minute_right_now = parseInt(bcom_date_right_now[2]),
+                      second_right_now = parseInt(bcom_date_right_now[3]),
+                      remaining_days = ( day_right_now >= 1 && day_right_now <= 6 ) ? 6 - day_right_now : (30 - day_right_now) + 6,
+                      remaining_hours = 23 - hour_right_now,
+                      remaining_minutes = 59 - minute_right_now,
+                      remaining_seconds = 59 - second_right_now;
+                      $(document).ready(function(){
+                        $('#countdown_days').html(remaining_days);
+                        $('#countdown_hours').html(remaining_hours);
+                        $('#countdown_mins').html(remaining_minutes);
+                        $('#countdown_secs').html(remaining_seconds);
+                        function appendSpace(str) {
+                          if (str.length > 0 && str.slice(str.length-1) != ' ')
+                            str = str + ' ';
+                            return str;
+                        }
+                        var countTime = (remaining_days != "0") ? '+' + remaining_days + 'd': '';
+                        if(remaining_hours != 0){
+                          countTime = appendSpace(countTime);
+                          countTime +="+"+remaining_hours+'h';
+                        }
+                        if(remaining_minutes != 0) {
+                          countTime = appendSpace(countTime);
+                          countTime+="+"+remaining_minutes+'m';
+                        }
+                        if(remaining_seconds != 0) {
+                          countTime = appendSpace(countTime);
+                          countTime+="+"+remaining_seconds+'s';
+                        }
+                        var layout = "%3Cdiv%20class%3D%22countdownBlock%20day%22%3E%3Cdiv%20class%3D%22countdownNumber%22%3E%7Bdn%7D%3C/div%3E%3Cdiv%20class%3D%22countdownDescription%22%3E%7Bdl%7D%3C/div%3E%3C/div%3E%3Cdiv%20class%3D%22countdownBlock%20hr%22%3E%3Cdiv%20class%3D%22countdownNumber%22%3E%7Bhn%7D%3C/div%3E%3Cdiv%20class%3D%22countdownDescription%22%3E%7Bhl%7D%3C/div%3E%3C/div%3E%3Cdiv%20class%3D%22countdownBlock%20min%22%3E%3Cdiv%20class%3D%22countdownNumber%22%3E%7Bmnn%7D%3C/div%3E%3Cdiv%20class%3D%22countdownDescription%22%3E%7Bml%7D%3C/div%3E%3C/div%3E%3Cdiv%20class%3D%22countdownBlock%20sec%22%3E%3Cdiv%20class%3D%22countdownNumber%22%3E%7Bsnn%7D%3C/div%3E%3Cdiv%20class%3D%22countdownDescription%22%3E%7Bsl%7D%3C/div%3E%3C/div%3E";
+                        $("#countdown").countdown({until: countTime, layout:unescape(layout)});
+                      });
+                    </script>
+                    <a href="http://www.bostonglobe.com/?p1=Well_BG_FreeTrial">
+                    <div class="box-copy">
+                        <p class="overline">Courtesy of Coldwell Banker Residential Brokerage</p>
+                            <h3>Try BostonGlobe.come for FREE now through May 6th</h3>
+                        </div><!-- / .box-copy -->
+                        <div class="countdown">
+                          <p>Time remaining for free trial:</p>
+                          <div id="countdown">
+                            <div class="countdownBlock day">
+                              <div class="countdownNumber" id="countdown_days">&nbsp;&nbsp;</div>
+                              <div class="countdownDescription">Days</div>
+                            </div>
+                            <div class="countdownBlock hr">
+                              <div class="countdownNumber" id="countdown_hours">&nbsp;&nbsp;</div>
+                              <div class="countdownDescription">Hours</div>
+                            </div>
+                            <div class="countdownBlock min">
+                              <div class="countdownNumber" id="countdown_mins">&nbsp;&nbsp;</div>
+                              <div class="countdownDescription">Minutes</div>
+                            </div>
+                            <div class="countdownBlock sec">
+                              <div class="countdownNumber" id="countdown_secs">&nbsp;&nbsp;</div>
+                              <div class="countdownDescription">Seconds</div>
+                            </div>
+                          </div>
+                        </div><!-- / .countdown -->
+                        <div class="cf"></div>
+                    </a>   
+                </div><!-- / #bcom-hp-globe-free -->
+                <!-- End Free Trial Countdown --> 
+
+<!--passthru-->
 
 
 
@@ -1605,13 +1679,13 @@ OAS_AD('LOGO6');
 <link rel="stylesheet" type="text/css" href="http://cache.boston.com/partners/deals/widget/bdwStyles.css">
 <div class="widget" id="dailyDeals">
 <div class="content" id="todaysDeal">
-<img src="http://cache.boston.com/email/bostondeals/2012/8770_tasteof/tasteofthene_1-150x88.jpg"><p class="ddwMerchant"><a data-campaign="s" data-posn="Widget" data-posntwo="deal" href="http://deals.boston.com/deal/8770/taste-of-the-north-end">Taste of the North End</a></p>
-<p>Buon appetito! $69 for one ticket to the Taste of the North End on Friday, 5/4 (worth $99)</p>
+<img src="http://cache.boston.com/email/bostondeals/2012/8975_topnotchresort/topnotch_1-150x88.jpg"><p class="ddwMerchant"><a data-campaign="s" data-posn="Widget" data-posntwo="deal" href="http://deals.boston.com/deal/8975/topnotch-resort-spa-stowe">Topnotch Resort &amp; Spa</a></p>
+<p>Topnotch Resort &amp; Spa: Up to 44% off spa getaways at a super luxurious sanctuary in Stowe</p>
 </div>
 <div id="static">
 <div id="email">
 <p class="emph">Get this deal:</p>
-<a data-campaign="s" data-posn="Widget" data-posntwo="buynow" href="http://deals.boston.com/deal/8770/taste-of-the-north-end" id="buyNowBtn"><img src="http://cache.boston.com/partners/deals/widget/buy_now_btn.png" alt="Buy Now"></a>
+<a data-campaign="s" data-posn="Widget" data-posntwo="buynow" href="http://deals.boston.com/deal/8975/topnotch-resort-spa-stowe" id="buyNowBtn"><img src="http://cache.boston.com/partners/deals/widget/buy_now_btn.png" alt="Buy Now"></a>
 </div>
 <div id="ddwClear"></div>
 </div>
@@ -1620,11 +1694,11 @@ OAS_AD('LOGO6');
 </div><script type="text/javascript">
             mboxCreate('bc_hp_dealsWidgetMbox', 
                        'pageType=homepage', 
-                       'merchant=Taste of the North End', 
-                       'imgSrc=http://cache.boston.com/email/bostondeals/2012/8770_tasteof/tasteofthene_1-150x88.jpg', 
-                       'largerImgSrc=http://cache.boston.com/email/bostondeals/2012/8770_tasteof/tasteofthene_1-287x168.jpg', 
-                       'shortDescription=Buon appetito! $69 for one ticket to the Taste of the North End on Friday, 5/4 (worth $99)', 
-                       'dealUrl=http://deals.boston.com/deal/8770/taste-of-the-north-end')
+                       'merchant=Topnotch Resort & Spa', 
+                       'imgSrc=http://cache.boston.com/email/bostondeals/2012/8975_topnotchresort/topnotch_1-150x88.jpg', 
+                       'largerImgSrc=http://cache.boston.com/email/bostondeals/2012/8975_topnotchresort/topnotch_1-287x168.jpg', 
+                       'shortDescription=Topnotch Resort & Spa: Up to 44% off spa getaways at a super luxurious sanctuary in Stowe', 
+                       'dealUrl=http://deals.boston.com/deal/8975/topnotch-resort-spa-stowe')
         </script>
 </div>
             <div id="hp_TTD"><!--passthru--><div class="bluePad">
@@ -1687,7 +1761,7 @@ OAS_AD('LOGO6');
             <div id="mPop"><!--passthru--><div class="hslice" id="mostpopular"><span class="entry-title" style="display:none;">Boston.com Most Emailed</span><a rel="entry-content" href="http://www.boston.com/partners/ieslice/mostpopular.html" style="display:none;">Subscribe to Slice</a><a rel="bookmark" href="http://www.boston.com/?camp=misc:on:mostpopslice:bookmark" target="_blank" style="display:none;">Bookmark Boston.com Most Emailed</a><span class="ttl" style="display:none;">120</span>
 	<div class="bluePad">
         <h3 class="sectionHeader"><a href="http://tools.boston.com/pass-it-on/popular?time=hour&p1=MEWell_See_Full_List">MOST E-MAILED</a></h3>
-        <!--passthru--><ol class="linklist"><li class="up"><a href="http://www.boston.com/lifestyle/health/childinmind/2012/04/engaging_our_right_brains_to_s.html?p1=Well_MostPop_Emailed1">Engaging Our Right Brains to Support Parents and Children - Child in Mind - Boston.com </a></li><li class="down"><a href="http://www.boston.com/news/education/higher/articles/2009/08/30/pressure_cooker_kindergarten/?p1=Well_MostPop_Emailed2">Pressure-cooker kindergarten</a></li><li class="up"><a href="http://www.boston.com/lifestyle/blogs/thenextgreatgeneration/2012/02/7_book_recommendation_websites.html?p1=Well_MostPop_Emailed3">7 book recommendation websites to find your next good read</a></li><li class="down"><a href="http://www.boston.com/bigpicture/2012/04/earth_day_2012.html?p1=Well_MostPop_Emailed4">Earth Day 2012</a></li><li class="up"><a href="http://www.boston.com/sports/baseball/redsox/extras/extra_bases/2012/04/bard_being_skip.html?p1=Well_MostPop_Emailed5">Bard being skipped; Anderson called up </a></li><li class="down"><a href="http://www.boston.com/sports/baseball/redsox/extras/extra_bases/2012/04/live_updates_th_1.html?p1=Well_MostPop_Emailed6">Ceremony honors Fenway Park</a></li><li class="up"><a href="http://www.boston.com/sports/baseball/redsox/extras/extra_bases/2012/04/schilling_will_2.html?p1=Well_MostPop_Emailed7">Schilling will not attend Fenway ceremony</a></li></ol>
+        <!--passthru--><ol class="linklist"><li class="up"><a href="http://www.boston.com/news/education/higher/articles/2009/08/30/pressure_cooker_kindergarten/?p1=Well_MostPop_Emailed1">Pressure-cooker kindergarten</a></li><li class="down"><a href="http://www.boston.com/lifestyle/health/childinmind/2012/04/engaging_our_right_brains_to_s.html?p1=Well_MostPop_Emailed2">Engaging Our Right Brains to Support Parents and Children - Child in Mind - Boston.com </a></li><li class="up"><a href="http://www.boston.com/lifestyle/blogs/thenextgreatgeneration/2012/02/7_book_recommendation_websites.html?p1=Well_MostPop_Emailed3">7 book recommendation websites to find your next good read</a></li><li class="down"><a href="http://www.boston.com/bigpicture/2012/04/earth_day_2012.html?p1=Well_MostPop_Emailed4">Earth Day 2012</a></li><li class="up"><a href="http://www.boston.com/sports/baseball/redsox/extras/extra_bases/2012/04/bard_being_skip.html?p1=Well_MostPop_Emailed5">Bard being skipped; Anderson called up </a></li><li class="down"><a href="http://www.boston.com/lifestyle/health/childinmind/2012/04/psychiatric_medication_in_chil.html?p1=Well_MostPop_Emailed6">Psychiatric Medication For Children? Important New Book Gives Pause - Child in Mind - Boston.com </a></li><li class="up"><a href="http://www.boston.com/lifestyle/health/childinmind/2012/03/pregnancy_loss_and_postpartum.html?p1=Well_MostPop_Emailed7">Pregnancy Loss and Postpartum Depression - Child in Mind - Boston.com </a></li></ol>
 
         <!--div class="leadOut"><a href="http://tools.boston.com/pass-it-on/popular?time=hour&p1=MEWell_See_Full_List">See full list</a></div-->
    </div>
