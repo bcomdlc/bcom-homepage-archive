@@ -78,7 +78,7 @@ var site=document.URL.toLowerCase().match(/s_campaign=(\w+)/);
   else
     {campaign=site[1]};
 OAS_sitepage='www.boston.com/sports/redsox/homepage';
-OAS_listpos='TOP,INTRO,BOTTOM,RIGHT4,POPUP,POPUN,EXTRA,BILLBOARD,SPONSOR,SPONSOR1,SPONSOR2,SPONSOR3,SPONSOR4,SPONSOR5,SPONSOR6,MISC1,MISC2,MISC3,MISC4,CENTRAL,HEADER,LOGO2';
+OAS_listpos='TOP,INTRO,BOTTOM,RIGHT4,POPUP,POPUN,EXTRA,BILLBOARD,SPONSOR,SPONSOR1,SPONSOR2,SPONSOR3,SPONSOR4,SPONSOR5,SPONSOR6,MISC1,MISC2,MISC3,MISC4,MISC5,CENTRAL,HEADER,LOGO2';
 oasquery='pagetype=section_folder&RM_Exclude=exclude_section_folder&s_campaign='+campaign;if(typeof OAS_query=='undefined'||!OAS_query)OAS_query=oasquery;else OAS_query+='&'+oasquery;
 OAS_url='http://rmedia.boston.com/RealMedia/ads/';OAS_target='_top';OAS_version=10;OAS_rn='001234567890';OAS_rns='1234567890';OAS_rn=new String(Math.random());OAS_rns=OAS_rn.substring(2, 11);
 //--></script><script language="JavaScript1.2"><!--
@@ -1355,6 +1355,9 @@ OAS_AD('MISC3');
 //--></script>
 <script language="JavaScript"><!--
 OAS_AD('MISC4');
+//--></script>
+<script language="JavaScript"><!--
+OAS_AD('MISC5');
 //--></script>
 
 
