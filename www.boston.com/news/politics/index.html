@@ -83,7 +83,7 @@ var site=document.URL.toLowerCase().match(/s_campaign=(\w+)/);
   else
     {campaign=site[1]};
 OAS_sitepage='www.boston.com/news/politics/homepage';
-OAS_listpos='TOP,INTRO,BOTTOM,RIGHT4,POPUP,POPUN,EXTRA,BILLBOARD,SPONSOR,SPONSOR1,SPONSOR2,SPONSOR3,SPONSOR4,SPONSOR5,SPONSOR6,MISC1,MISC2,MISC3,MISC4,CENTRAL,FEATURE,RIGHT1';
+OAS_listpos='TOP,INTRO,BOTTOM,RIGHT4,POPUP,POPUN,EXTRA,BILLBOARD,SPONSOR,SPONSOR1,SPONSOR2,SPONSOR3,SPONSOR4,SPONSOR5,SPONSOR6,MISC1,MISC2,MISC3,MISC4,MISC5,CENTRAL,FEATURE,RIGHT1';
 oasquery='pagetype=section_folder&RM_Exclude=exclude_section_folder&s_campaign='+campaign;if(typeof OAS_query=='undefined'||!OAS_query)OAS_query=oasquery;else OAS_query+='&'+oasquery;
 OAS_url='http://rmedia.boston.com/RealMedia/ads/';OAS_target='_top';OAS_version=10;OAS_rn='001234567890';OAS_rns='1234567890';OAS_rn=new String(Math.random());OAS_rns=OAS_rn.substring(2, 11);
 //--></script><script language="JavaScript1.2"><!--
@@ -203,7 +203,7 @@ mboxCreate('bc_globalMbox','mboxPageValue=0.86','pageType=Section Folder','path=
   <a href="http://www.boston.com/ae/radio/" class="radio-name"><img src="http://cache.boston.com/universal/site_graphics/player_iconlogo.png" alt="RadioBDC Logo" /></a>
   <div id="now-playing-header">
     <div class="scrollMeAway">
-      <!--passthru--><span class="np-song-title">All Our Love</span> | <span class="np-song-artist">Gentlemen Hall</span>
+      <!--passthru--><span class="np-song-title">Battle Flag</span> | <span class="np-song-artist">Lo-Fidelity Allstars</span>
 
       <a class="listen-live"
 	 href="http://www.boston.com/ae/radio/player/"
@@ -356,7 +356,7 @@ OAS_AD('BILLBOARD');
     <li><a>Candidates<span class="campaign-nav-drop"></span></a>
           <ul>
 	          <li><a class="campaign-feat" href="http://www.boston.com/news/politics/2012/president/tracker/">Candidate tracker</a></li>
-	         <!-- <li><a class="campaign-feat" href="http://www.boston.com/news/politics/2012/president/polls/">Poll tracker</a></li> -->
+	         <li><a class="campaign-feat" href="http://www.boston.com/news/politics/2012/president/polls/">Poll tracker</a></li>
 	          <li><a class="campaign-feat" href="http://www.boston.com/news/politics/2012/president/delegates/">Delegate counter</a></li>
              <li><a href="http://www.boston.com/news/politics/2012/president/candidates/obama">Barack Obama</a></li>
              <!-- <li><a href="http://www.boston.com/news/politics/2012/president/candidates/bachmann">Michele Bachmann</a><li> -->
@@ -370,7 +370,13 @@ OAS_AD('BILLBOARD');
           </ul>
     </li>
    <li><a href="http://www.boston.com/news/politics/2012/president/debates/">Debates</a></li>
-   <li><a href="http://www.boston.com/news/politics/2012/senate/">US Senate</a></li>
+   <li><a>US Senate<span class="campaign-nav-drop"></span></a>
+	   <ul>
+		   <li><a class="campaign-feat" href="http://www.boston.com/news/politics/2012/senate/">Mass. race</a></li>
+		   <li><a class="campaign-feat" href="http://www.boston.com/news/politics/2012/senate/candidates/brown">Scott Brown</a></li>
+		   <li><a class="campaign-feat" href="http://www.boston.com/news/politics/2012/senate/candidates/warren">Elizabeth Warren</a></li>
+	   </ul>
+   </li>
    <li><a>More Politics<span class="campaign-nav-drop"></span></a>
 		<ul>
 			<li><a href="http://www.boston.com/news/politics/">All politics</a></li>
@@ -900,7 +906,7 @@ OAS_AD('FEATURE');
 
     <!--passthru-->
 <div class="padBottom10">
-<h3><a href="http://www.boston.com/politicalintelligence/2012/08/14/speech-scott-brown-accuses-elizabeth-warren-seeking-imposing-new-taxes/iKksf50P4PIc6hIQisqfYN/story.html">In speech, Scott Brown accuses Elizabeth Warren of seeking to imposing new taxes</a></h3>
+<h3><a href="http://www.boston.com/politicalintelligence/2012/08/14/speech-scott-brown-accuses-elizabeth-warren-seeking-imposing-new-taxes/iKksf50P4PIc6hIQisqfYN/story.html">In speech, Scott Brown accuses Elizabeth Warren of seeking to impose new taxes</a></h3>
 <span class="tt"> In one of his more confrontational speeches this campaign season, Scott Brown accused his Democratic opponent Elizabeth Warren of seeking to impose $3.5 trillion in new taxes over the next decade. The remarks, delivered to the South Shore Chamber of Commerce, were billed as a major policy speech, but did not make any new policy pronouncements, instead reiterating themes that Brown has struck throughout his Senate race. </span>
 </div><div class="padBottom10">
 <h3><a href="http://www.boston.com/politicalintelligence/2012/08/14/mitt-romney-selection-paul-ryan-has-little-impact-favorability-rating-poll-indicates/43T96mpwxNUFoH6ZiCNNjP/story.html">Mitt Romney&#8217;s selection of Paul Ryan has little impact on favorability rating, poll indicates</a></h3>
@@ -988,7 +994,7 @@ OAS_AD('FEATURE');
 
 <h3 class="sectionHeader"><h3 class="titleCase sectionHeader">National politics: Latest news</h3></h3>
 <div class="padTop10"></div>
-<!--passthru--><!-- [#      4501 ] /Boston/Queries/Export-Bonzai/News/Politics.query [QueryProxyImpl:EOM::Query, 1.0.1919057730] -->
+<!--passthru--><!-- [#     13894 ] /Boston/Queries/Export-Bonzai/News/Politics.query [QueryProxyImpl:EOM::Query, 1.0.1919057730] -->
 
 <div class="tease">
 	<ul>
@@ -996,19 +1002,19 @@ OAS_AD('FEATURE');
 			<!-- DEBUG: Status: 1, Object: d418a97e-e63f-11e1-8252-cbced0f6880e, Instance: d418a97e-e63f-11e1-8252-cbced0f6880e, Headline: Romney rolls out ad criticizing Obama on Medicare -->
 			<li>
 			<h2><a href="/news/politics/2012/president/candidates/romney/2012/08/14/romney-rolls-out-criticizing-obama-medicare/WIe22FIfkDDoAiHpgIqRPO/story.html">Romney rolls out ad criticizing Obama on Medicare</a></h2>
-			<p>WASHINGTON (AP) -- Mitt Romney's presidential campaign is telling seniors in a new television ad that President Barack Obama cut billions from Medicare to pay for his health care program. <span class="source">(  &nbsp; 08/14/2012 3:38 PM )</span></p>
+			<p>WASHINGTON (AP) -- Mitt Romney's presidential campaign is telling seniors in a new television ad that President Barack Obama cut billions from Medicare to pay for his health care program. <span class="source">(  &nbsp; 08/14/2012 3:52 PM )</span></p>
 		</li>
-			<!-- DEBUG: Status: 2, Object: c7c1a000-e643-11e1-8252-cbced0f6880e, Instance: c7c1a000-e643-11e1-8252-cbced0f6880e, Headline: Romney blocks media from Ryan's 1st Vegas funder, -->
-			<!-- DEBUG: Status: 2, Object: c7c1a000-e643-11e1-8252-cbced0f6880e, Instance: c7c1a000-e643-11e1-8252-cbced0f6880e, Headline: Romney blocks media from Ryan's 1st Vegas funder -->
-			<li>
-			<h2><a href="/news/politics/2012/president/candidates/romney/2012/08/14/romney-blocks-media-from-ryan-vegas-funder/OiTnnuIESyP13CGETt991N/story.html">Romney blocks media from Ryan's 1st Vegas funder</a></h2>
-			<p>DENVER (AP) -- Mitt Romney's campaign is blocking reporters from covering GOP vice presidential candidate Paul Ryan's first meeting with donors in Las Vegas. <span class="source">(  &nbsp; 08/14/2012 3:38 PM )</span></p>
-		</li>
-			<!-- DEBUG: Status: 3, Object: 42f75130-e5df-11e1-8252-cbced0f6880e, Instance: 42f75130-e5df-11e1-8252-cbced0f6880e, Headline: Familiar foe: In Ryan, Obama sees twofold target, -->
-			<!-- DEBUG: Status: 3, Object: 42f75130-e5df-11e1-8252-cbced0f6880e, Instance: 42f75130-e5df-11e1-8252-cbced0f6880e, Headline: Familiar foe: In Ryan, Obama sees twofold target -->
+			<!-- DEBUG: Status: 2, Object: 42f75130-e5df-11e1-8252-cbced0f6880e, Instance: 42f75130-e5df-11e1-8252-cbced0f6880e, Headline: Familiar foe: In Ryan, Obama sees twofold target, -->
+			<!-- DEBUG: Status: 2, Object: 42f75130-e5df-11e1-8252-cbced0f6880e, Instance: 42f75130-e5df-11e1-8252-cbced0f6880e, Headline: Familiar foe: In Ryan, Obama sees twofold target -->
 			<li>
 			<h2><a href="/news/politics/2012/president/candidates/obama/2012/08/14/familiar-foe-ryan-obama-sees-twofold-target/mAOUnvTeKZlnZ4oFzTiazJ/story.html">Familiar foe: In Ryan, Obama sees twofold target</a></h2>
-			<p>DES MOINES, Iowa (AP) -- In his run for a second term, President Barack Obama had an opponent before he had an opponent: House Republicans. They shellacked him in the midterm elections, blocked much of his legislative agenda and pushed economic views that are wildly different from his. <span class="source">(  &nbsp; 08/14/2012 3:38 PM )</span></p>
+			<p>DES MOINES, Iowa (AP) -- In his run for a second term, President Barack Obama had an opponent before he had an opponent: House Republicans. They shellacked him in the midterm elections, blocked much of his legislative agenda and pushed economic views that are wildly different from his. <span class="source">(  &nbsp; 08/14/2012 3:52 PM )</span></p>
+		</li>
+			<!-- DEBUG: Status: 3, Object: ce537814-e5c4-11e1-8252-cbced0f6880e, Instance: ce537814-e5c4-11e1-8252-cbced0f6880e, Headline: Host for Romney event is a convicted drug dealer, -->
+			<!-- DEBUG: Status: 3, Object: ce537814-e5c4-11e1-8252-cbced0f6880e, Instance: ce537814-e5c4-11e1-8252-cbced0f6880e, Headline: Host for Romney event is a convicted drug dealer -->
+			<li>
+			<h2><a href="/news/politics/2012/president/candidates/romney/2012/08/14/host-for-romney-event-convicted-drug-dealer/gDfH3aldWm7ubqAPdOlYEO/story.html">Host for Romney event is a convicted drug dealer</a></h2>
+			<p>MIAMI (AP) -- Mitt Romney held a campaign event Monday evening at a Miami juice shop owned by a convicted cocaine trafficker. <span class="source">(  &nbsp; 08/14/2012 3:51 PM )</span></p>
 		</li>
 			</ul>
 </div><!-- / .tease -->
@@ -1115,6 +1121,9 @@ OAS_AD('MISC3');
 //--></script>
 <script language="JavaScript"><!--
 OAS_AD('MISC4');
+//--></script>
+<script language="JavaScript"><!--
+OAS_AD('MISC5');
 //--></script>
 
 
