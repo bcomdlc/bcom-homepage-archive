@@ -78,7 +78,7 @@ var site=document.URL.toLowerCase().match(/s_campaign=(\w+)/);
   else
     {campaign=site[1]};
 OAS_sitepage='www.boston.com/sports/redsox/homepage';
-OAS_listpos='TOP,INTRO,POPUP,POPUN,EXTRA,BILLBOARD,SPONSOR,SPONSOR1,SPONSOR2,SPONSOR3,SPONSOR4,SPONSOR5,SPONSOR6,MISC1,MISC2,MISC3,MISC4,MISC5,CENTRAL,HEADER,LOGO2';
+OAS_listpos='TOP,INTRO,POPUP,POPUN,EXTRA,BILLBOARD,SPONSOR,SPONSOR1,SPONSOR2,SPONSOR3,SPONSOR4,SPONSOR5,SPONSOR6,MISC1,MISC2,MISC3,MISC4,MISC5,CENTRAL,FEATURE,HEADER,LOGO2';
 oasquery='pagetype=section_folder&RM_Exclude=exclude_section_folder&s_campaign='+campaign;if(typeof OAS_query=='undefined'||!OAS_query)OAS_query=oasquery;else OAS_query+='&'+oasquery;
 OAS_url='http://rmedia.boston.com/RealMedia/ads/';OAS_target='_top';OAS_version=10;OAS_rn='001234567890';OAS_rns='1234567890';OAS_rn=new String(Math.random());OAS_rns=OAS_rn.substring(2, 11);
 //--></script><script language="JavaScript1.2"><!--
@@ -575,7 +575,10 @@ OAS_AD('LOGO1');
 <div class="tc36">
   <div class="cols3">
 
-<div id="featureStack"><a class="insideTease"
+<div id="featureStack"><div class="adContainer"><script language="JavaScript"><!--
+OAS_AD('FEATURE');
+//--></script></div>
+<a class="insideTease"
    href="http://www.boston.com/sports/baseball/redsox/2012/08/25/red-sox-dodgers-blockbuster-trade/i8zpb5zJq2JNrH37ZUyswI/pictures.html"><span
     class="leadIn">Sox-Dodgers trade </span>
       <div class="insideImg"><img src="http://cache.boston.com/bonzai-fba/Globe_Photo/2012/08/28/178beckett__1346153803_3264-1.jpg" width="178" alt="Breakdown of the Sox-Dodgers deal" title="Breakdown of the Sox-Dodgers deal" border="0" height="155" /></div>
@@ -832,7 +835,7 @@ OAS_AD('CENTRAL');
 <div class="subSectionHeader">Major League Baseball news</div>
 <div class="dotted1px"><img src="http://cache.boston.com/universal/site_graphics/spcr.gif"
                             class="spcrGif" alt="" /></div>
-<!--passthru--><!-- [       4749#] /Boston/Queries/Export-Bonzai/Sports/Red Sox-Homepage Headlines.query [QueryProxyImpl:EOM::Query, 1.0.1739701002] -->
+<!--passthru--><!-- [      24367#] /Boston/Queries/Export-Bonzai/Sports/Red Sox-Homepage Headlines.query [QueryProxyImpl:EOM::Query, 1.0.1739701002] -->
 
 <div class="tease">
 	<ul class="bulleted">
