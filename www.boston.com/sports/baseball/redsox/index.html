@@ -840,7 +840,7 @@ OAS_AD('CENTRAL');
 <div class="subSectionHeader">Major League Baseball news</div>
 <div class="dotted1px"><img src="http://cache.boston.com/universal/site_graphics/spcr.gif"
                             class="spcrGif" alt="" /></div>
-<!--passthru--><!-- [       7262#] /Boston/Queries/Export-Bonzai/Sports/Red Sox-Homepage Headlines.query [QueryProxyImpl:EOM::Query, 1.0.1739701002] -->
+<!--passthru--><!-- [      14135#] /Boston/Queries/Export-Bonzai/Sports/Red Sox-Homepage Headlines.query [QueryProxyImpl:EOM::Query, 1.0.1739701002] -->
 
 <div class="tease">
 	<ul class="bulleted">
@@ -1263,6 +1263,7 @@ OAS_AD('SPONSOR6');
       <li><a rel="nofollow" href="http://jobs.nytco.com/content/the-new-england-media-group/">Work here</a></li><li class="listPipe">|</li>
       <li><a rel="nofollow" href="http://www.boston.com/help/privacy_policy/">Privacy Policy</a></li><li class="listPipe">|</li>
       <li><a rel="nofollow" href="http://www.boston.com/help/privacy_policy/#adchoice">Your Ad Choices</a></li><li class="listPipe">|</li>
+	  <li><a rel="nofollow" href="http://www.boston.com/help/memberagreement">Terms of Service</a></li>
       <li><script language="JavaScript"><!--
           signupLink();
           //--></script><noscript><a href="http://www.boston.com/help/email">Newsletters</a></noscript></li><li class="listPipe">|</li>
@@ -1290,7 +1291,7 @@ OAS_AD('SPONSOR6');
 
   var pluckEntries = pluckEntries || [];
 
-  if (typeof pluckCats != 'undefined' && pluckCats == 'MT Blog')
+  if (typeof pluckCats != 'undefined' && pluckCats == 'MT Blog' && location.search.substr(1).split("=")[0] == "comments")
      {
        uuid = pluckID;
        if (typeof pluckIdIsUuid == 'undefined')
