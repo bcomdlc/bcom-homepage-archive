@@ -119,7 +119,7 @@ var var5 = 'hp_';</script>
                    <div class="headerMiddle">
                      <!--passthru-->
                      Nov. 19, 2012
-		     <!--passthru--><div id="hpUpdate">Updated:  4:56 AM</div>
+		     <!--passthru--><div id="hpUpdate">Updated:  5:19 AM</div>
 
                    </div>
                    <div class="headerRight">
@@ -132,14 +132,14 @@ var var5 = 'hp_';</script>
                  </div>
                  <div class="headerLeft">
 		   <!--passthru-->
-<div id="homepageWeather" class="weather35 weatherGeneric">
-  <div id="hancock"class="blue_hancock_steady">
+<div id="homepageWeather" class="weather38 weatherGeneric">
+  <div id="hancock"class="blue_hancock_flash">
     <a onclick="javascript:window.open('http://www.boston.com/redesign/weather_pop.htm',
     'weather','width=470,height=250,scrollbars=no,menubar=no,status=no,resizeable=no,location=no');">
-      John Hancock Weather Beacon: Steady Blue</a></div>
+      John Hancock Weather Beacon: Flashing Blue</a></div>
   <div class="infoholder">
   <span class="degrees">34&deg;</span>
-  <span class="current">Partly cloudy</span>
+  <span class="current">Mostly cloudy</span>
   </div>
 <div class="weather-links">
     <a href="http://www.boston.com/weather/?p1=Header_Weather">Weather</a>&nbsp;|&nbsp;
@@ -160,11 +160,79 @@ var var5 = 'hp_';</script>
                  </div>
                  <div class="headerMiddle"><!--passthru-->
 
-<img src="http://cache.boston.com/bonzai-fba/Site_Graphic/2009/10/13/boston-header-logo__1255460357_6840__1255460357_6840-1.gif"
+
+
+<div class="simpleTC" data-vr-contentbox=""><img src="http://cache.boston.com/bonzai-fba/Site_Graphic/2009/10/13/boston-header-logo__1255460357_6840__1351431827_8081-1.gif"
      width="385" alt="Boston.com" title="Boston.com"
-     border="0" height="132" class="imageSimple" /></div>
+     border="0" height="132" class="imageSimple" />
+<script>
+(function(){
+	var logoDetails = {
+		path: 'http://cache.boston.com/images/logos/logo_movember_111312.swf',
+		width: 386,
+		height: 97,
+		id: 'logo-replace'
+	}, console = window.console || { log: function(){} };
+
+	function replaceBComLogo(id, path, width, height){
+		var flashvars = {},
+			params = {
+				menu: "false",
+				wmode: "transparent",
+				allowscriptaccess: "always"
+			},
+			ids= {};
+
+		// make sure swfonject exists
+		if(typeof swfobject === "undefined" || !swfobject){
+			return;
+		}
+
+
+		swfobject.embedSWF(path, id, width, height, "8.0.0",null, flashvars, params, ids, function(res){
+			if(!res.success){
+				$('#' + id)
+					.find('img')
+					.attr({
+						src: "http://cache.boston.com/images/homepage/special_logos/11_2012/logo_movember_103012.jpg",
+						alt: 'Show us your 2012 Movember mustache',
+						title: 'Show us your 2012 Movember mustache'
+					})
+			}else{
+				$('#' + logoDetails.id)
+					.attr({
+						alt: 'Show us your 2012 Movember mustache',
+						title: 'Show us your 2012 Movember mustache'
+					});
+			}
+		});
+	}
+
+
+	$('.headerMiddle')
+		.find('img')
+		.wrap("<a href='http://www.boston.com/lifestyle/health/specials/movemeber_2012/' target='_blank' id='"+logoDetails.id+"' />")
+
+	$(function(){
+		replaceBComLogo(logoDetails.id, logoDetails.path, logoDetails.width, logoDetails.height);
+	});
+
+}());
+
+
+</script>
+
+<style type="text/css">
+	#logo-replace{
+		display:block;
+	}
+	#logo-replace img{
+		display: block;
+	}
+</style>
+</div></div>
                  <div class="headerRight"><!--passthru--><div id="homepageHeaderDeal">
-<a data-posn="Header" data-posntwo="logo" data-campaign="s" id="HomepageHeaderDealHeader" href="http://deals.boston.com/deal/22273/jalapenos-grill-walpole-north-attleborough">Boston Deals</a>Jalape&#241;os Grill: Up to 67% off lunch or dinner in Walpole or North Att...<div id="hompeageHeaderGet"><a data-posn="Header" data-posntwo="link" data-campaign="s" href="http://deals.boston.com/deal/22273/jalapenos-grill-walpole-north-attleborough">Get this deal</a></div>
+<a data-posn="Header" data-posntwo="logo" data-campaign="s" id="HomepageHeaderDealHeader" href="http://deals.boston.com/deal/21455/boston-ski-and-tennis-newton-westborough">Boston Deals</a>Boston Ski &amp; Tennis: Half off ski and board apparel, equipment, and tu...<div id="hompeageHeaderGet"><a data-posn="Header" data-posntwo="link" data-campaign="s" href="http://deals.boston.com/deal/21455/boston-ski-and-tennis-newton-westborough">Get this deal</a></div>
 </div>
 </div>
 
@@ -2237,7 +2305,7 @@ s.tl(this,'o','RadioBDC Player Launch - Homepage Widget');">
 	Listen Live</a>
 <div id="now-playing-well">
   <div class="scrollMeAway">
-    <span class="np-song-title">Up Up Up</span> | <span class="np-song-artist">Givers</span>
+    <span class="np-song-title">Fitzpleasure</span> | <span class="np-song-artist">Alt-J</span>
 
   </div>
 </div>
@@ -2291,17 +2359,17 @@ s.tl(this,'o','RadioBDC Player Launch - Homepage Widget');">
 
 <div id="hp_deals">
 <link rel="stylesheet" type="text/css" href="http://cache.boston.com/partners/deals/widget/bdwStyles.css"><div class="blue-box" style="margin-top:20px;">
-<h3 class="sectionHeader"><a class="TodayDeal" data-posn="Widget" data-posntwo="banner" data-campaign="s" href="http://deals.boston.com/deal/22048/inn-by-the-sea-up-cape-elizabeth">Today's Deal</a></h3>
+<h3 class="sectionHeader"><a class="TodayDeal" data-posn="Widget" data-posntwo="banner" data-campaign="s" href="http://deals.boston.com/deal/22178/northern-extremes-snowmobile-tours">Today's Deal</a></h3>
 <a href="http://deals.boston.com" class="hp-deals-logo" data-posn="Widget" data-posntwo="banner" data-campaign="s"><img src="http://cache.boston.com/partners/deals/widget/boston_deals_tag_logo.png" alt="Boston Deals"></a><div class="widget" id="dailyDeals">
 <div class="content" id="todaysDeal">
-<p class="ddwMerchant push"><a data-campaign="s" data-posn="Widget" data-posntwo="deal" href="http://deals.boston.com/deal/22048/inn-by-the-sea-up-cape-elizabeth">Inn by the Sea</a></p>
-<img src="http://cache.boston.com/email/bostondeals/2012/22048_innby/innbythesea_1-287x168.jpg">
+<p class="ddwMerchant push"><a data-campaign="s" data-posn="Widget" data-posntwo="deal" href="http://deals.boston.com/deal/22178/northern-extremes-snowmobile-tours">Northern Extremes Snowmobiling</a></p>
+<img src="http://cache.boston.com/email/bostondeals/2012/22178_northernextremes/northernextremessnowmobiling_2_110211-287x168.jpg">
 </div>
 <div id="static" class="floats">
-<p class="deal-description">Inn by the Sea: Up to 43% off luxurious coastal stays in Cape Elizabeth, ME</p>
+<p class="deal-description">Northern Extremes Snowmobile Tours: Up to 39% off half-day snowmobile rentals in Bartlett, NH</p>
 <div id="email">
 <p class="emph">Get this deal:</p>
-<a data-campaign="s" data-posn="Widget" data-posntwo="visitdeal" href="http://deals.boston.com/deal/22048/inn-by-the-sea-up-cape-elizabeth" id="buyNowBtn"><img src="http://cache.boston.com/partners/deals/widget/visit_deal_btn.png" alt="Buy Now"></a>
+<a data-campaign="s" data-posn="Widget" data-posntwo="visitdeal" href="http://deals.boston.com/deal/22178/northern-extremes-snowmobile-tours" id="buyNowBtn"><img src="http://cache.boston.com/partners/deals/widget/visit_deal_btn.png" alt="Buy Now"></a>
 </div>
 <div id="ddwClear"></div>
 </div>
@@ -2370,7 +2438,7 @@ s.tl(this,'o','RadioBDC Player Launch - Homepage Widget');">
             <div id="mPop"><!--passthru--><div class="hslice" id="mostpopular"><span class="entry-title" style="display:none;">Boston.com Most Emailed</span><a rel="entry-content" href="http://www.boston.com/partners/ieslice/mostpopular.html" style="display:none;">Subscribe to Slice</a><a rel="bookmark" href="http://www.boston.com/?camp=misc:on:mostpopslice:bookmark" target="_blank" style="display:none;">Bookmark Boston.com Most Emailed</a><span class="ttl" style="display:none;">120</span>
 	<div class="bluePad">
         <h3 class="sectionHeader"><a href="http://tools.boston.com/pass-it-on/popular?time=hour&p1=MEWell_See_Full_List">MOST E-MAILED</a></h3>
-        <!--passthru--><ol class="linklist"><li class="up"><a href="http://www.boston.com/business/news/2012/11/18/twinkies-likely-survive-sale-hostess/40EWYqdWkI2jInOXPeD1iM/story.html?p1=Well_MostPop_Emailed1">Twinkies likely to survive sale of Hostess</a></li><li class="down"><a href="http://www.boston.com/metrodesk/2012/11/18/state-highway-safety-director-reassigned-following-revelations-driving-violations/cmG7kjfrKLHCvAxWwPMpIM/story.html?p1=Well_MostPop_Emailed2">State highway safety director reassigned following revelations of driving violations</a></li><li class="up"><a href="http://www.boston.com/business/personalfinance/managingyourmoney/archives/2009/01/money_market_fu.html?p1=Well_MostPop_Emailed3">Money market funds vs. money market accounts</a></li><li class="down"><a href="http://www.boston.com/news/world/middle-east/2012/11/19/palestinian-civilian-toll-climbs-gaza/Y8ezLC9XyWtbXpeeOERLzI/story.html?p1=Well_MostPop_Emailed4">Palestinian civilian toll climbs in Gaza</a></li><li class="up"><a href="http://www.boston.com/news/world/asia/2012/11/19/obama-meet-with-cambodia-longtime-strongman/8K6u7905ACcTg1MPFOPP3J/story.html?p1=Well_MostPop_Emailed5">Obama to meet with Cambodia's longtime 'strongman'</a></li><li class="down"><a href="http://www.boston.com/lifestyle/blogs/bostonspirit/2012/11/roman_catholic_church_spent_2.html?p1=Well_MostPop_Emailed6">Roman Catholic Church spent $2 million to defeat marriage equality</a></li><li class="up"><a href="http://www.boston.com/dailydose/2012/11/14/antibiotic-overuse-making-common-urinary-tract-infections-harder-treat/64tk7ddCkY03O2DOnKPPnL/story.html?p1=Well_MostPop_Emailed7">Antibiotic overuse making common urinary tract infections harder to treat </a></li></ol>
+        <!--passthru--><ol class="linklist"><li class="up"><a href="http://www.boston.com/business/news/2012/11/18/twinkies-likely-survive-sale-hostess/40EWYqdWkI2jInOXPeD1iM/story.html?p1=Well_MostPop_Emailed1">Twinkies likely to survive sale of Hostess</a></li><li class="down"><a href="http://www.boston.com/metrodesk/2012/11/18/state-highway-safety-director-reassigned-following-revelations-driving-violations/cmG7kjfrKLHCvAxWwPMpIM/story.html?p1=Well_MostPop_Emailed2">State highway safety director reassigned following revelations of driving violations</a></li><li class="up"><a href="http://www.boston.com/news/world/asia/2012/11/19/obama-meet-with-cambodia-longtime-strongman/8K6u7905ACcTg1MPFOPP3J/story.html?p1=Well_MostPop_Emailed3">Obama to meet with Cambodia's longtime 'strongman'</a></li><li class="down"><a href="http://www.boston.com/lifestyle/blogs/bostonspirit/2012/11/roman_catholic_church_spent_2.html?p1=Well_MostPop_Emailed4">Roman Catholic Church spent $2 million to defeat marriage equality</a></li><li class="up"><a href="http://www.boston.com/dailydose/2012/11/14/antibiotic-overuse-making-common-urinary-tract-infections-harder-treat/64tk7ddCkY03O2DOnKPPnL/story.html?p1=Well_MostPop_Emailed5">Antibiotic overuse making common urinary tract infections harder to treat </a></li><li class="down"><a href="http://www.boston.com/metrodesk/2012/11/18/authorities-search-for-fisherman-after-foot-scallop-boat-sinks-near-provincetown/O3gEVRVrqI2hdoRybM6cgM/story.html?p1=Well_MostPop_Emailed6">Authorities search for fisherman after 42-foot scallop boat sinks near Provincetown </a></li><li class="up"><a href="http://www.boston.com/bigpicture/2008/05/indigenous_brazilians_protest.html?p1=Well_MostPop_Emailed7">Indigenous Brazilians Protest Dam</a></li></ol>
 
         <!--div class="leadOut"><a href="http://tools.boston.com/pass-it-on/popular?time=hour&p1=MEWell_See_Full_List">See full list</a></div-->
    </div>
