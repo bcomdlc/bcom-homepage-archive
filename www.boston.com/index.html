@@ -119,7 +119,7 @@ var var5 = 'hp_';</script>
                    <div class="headerMiddle">
                      <!--passthru-->
                      Nov. 27, 2012
-		     <!--passthru--><div id="hpUpdate">Updated: 11:37 AM</div>
+		     <!--passthru--><div id="hpUpdate">Updated: 11:51 AM</div>
 
                    </div>
                    <div class="headerRight">
@@ -132,14 +132,14 @@ var var5 = 'hp_';</script>
                  </div>
                  <div class="headerLeft">
 		   <!--passthru-->
-<div id="homepageWeather" class="weather12 weatherGeneric">
+<div id="homepageWeather" class="weather18 weatherGeneric">
   <div id="hancock"class="red_hancock_steady">
     <a onclick="javascript:window.open('http://www.boston.com/redesign/weather_pop.htm',
     'weather','width=470,height=250,scrollbars=no,menubar=no,status=no,resizeable=no,location=no');">
       John Hancock Weather Beacon: Steady Red</a></div>
   <div class="infoholder">
   <span class="degrees">36&deg;</span>
-  <span class="current">Showers</span>
+  <span class="current">Rain</span>
   </div>
 <div class="weather-links">
     <a href="http://www.boston.com/weather/?p1=Header_Weather">Weather</a>&nbsp;|&nbsp;
@@ -160,8 +160,82 @@ var var5 = 'hp_';</script>
                  </div>
                  <div class="headerMiddle"><!--passthru-->
 
-<div class="imgSimple"><a href="http://globesanta.org/?p1=hp_Header_Logo_GlobeSanta12"
-                          class="imageLink"><img src="http://cache.boston.com/bonzai-fba/Site_Graphic/2011/11/23/globesantalogo__1322083751_0301.jpg" title="Kicking off the Globe Santa season" height="134" width="387" alt="Kicking off the Globe Santa season" border="0" /></a></div></div>
+
+
+<div class="simpleTC" data-vr-contentbox=""><img src="http://cache.boston.com/bonzai-fba/Site_Graphic/2009/10/13/boston-header-logo__1255460357_6840__1351431827_8081-1.gif"
+     width="385" alt="Boston.com" title="Boston.com"
+     border="0" height="132" class="imageSimple" />
+<script>
+(function(win, $, undefined){
+	var logoDetails = {
+		path: 'http://cache.boston.com/images/logos/GlobeSanta_Anim_8B_nobkgd_120210a.swf?clickTag=http://globesanta.org/',
+		fallback: 'http://cache.boston.com/images/logos/GlobeSanta_Anim3_121510e.jpg',
+		title: '',
+		width: 683,
+		height: 133,
+		clicks_to: 'http://globesanta.org/',
+		id: 'logo-replace'
+	}, console = window.console || { log: function(){} };
+
+	function replaceBComLogo(id, path, width, height){
+		var flashvars = {},
+			params = {
+				menu: "false",
+				wmode: "transparent",
+				allowscriptaccess: "always"
+			},
+			ids= {};
+
+		// make sure swfonject exists
+		if(typeof swfobject === "undefined" || !swfobject){
+			return;
+		}
+
+
+		swfobject.embedSWF(path, id, width, height, "8.0.0",null, flashvars, params, ids, function(res){
+			console.log('in callback');
+			if(!res.success){
+				console.log('no success');
+				$('#' + id)
+					.find('img')
+					.attr({
+						src: logoDetails.fallback,
+						alt: logoDetails.title,
+						title: logoDetails.title
+					});
+			}else{
+				console.log('success!');
+				$('#' + logoDetails.id)
+					.attr({
+						alt: logoDetails.title,
+						title: logoDetails.title
+					});
+			}
+		});
+	}
+
+
+	
+
+	$(function(){
+		$('.headerMiddle')
+			.find('img')
+			.wrap("<a href='"+logoDetails.clicks_to+"' target='_blank' id='"+logoDetails.id+"' />");
+		replaceBComLogo(logoDetails.id, logoDetails.path, logoDetails.width, logoDetails.height);
+	});
+
+}(window, jQuery));
+</script>
+
+<style type="text/css">
+	#logo-replace{
+		display:block;
+	}
+	#logo-replace img{
+		display: block;
+	}
+</style>
+</div></div>
                  <div class="headerRight"><!--passthru--><div id="homepageHeaderDeal">
 <a data-posn="Header" data-posntwo="logo" data-campaign="s" id="HomepageHeaderDealHeader" href="http://deals.boston.com/deal/24541/the-mave-hotel-new-york-city">Boston Deals</a>The Mave Hotel: Two-night boutique hotel stay in New York City<div id="hompeageHeaderGet"><a data-posn="Header" data-posntwo="link" data-campaign="s" href="http://deals.boston.com/deal/24541/the-mave-hotel-new-york-city">Get this deal</a></div>
 </div>
@@ -375,25 +449,26 @@ deals</a></li>
 
 
 <div class="cf"></div>
-<div class="overline">boston college football</div>
-<div class="img100h3Left"><a href="http://www.boston.com/sports/colleges/football/2012/11/27/frank-spaziani-known-for-his-loyalty/wJZXSFZXuDWQnIz8gRQneM/story.html"
-                             class="imageLink"><img src="http://cache.boston.com/bonzai-fba/Third_Party_Photo/2012/11/27/spaziani__1354003753_7603.jpg" title="Spaziani was loyal through the end" height="100" width="100" alt="Spaziani was loyal through the end" border="0" /></a><h3><a
-    href="http://www.boston.com/sports/colleges/football/2012/11/27/frank-spaziani-known-for-his-loyalty/wJZXSFZXuDWQnIz8gRQneM/story.html">Spaziani was loyal through the end</a></h3><div class="tt">
-<span>Loyalty is the signature of Frank Spaziani's 16 years at BC, and why he was hired in the first place.</span> </div><div
+<div class="overline">Major League Baseball</div>
+<div class="padTop4"></div>
+<div class="img100h3Left"><a href="http://www.boston.com/sports/baseball/2012/11/27/marvin-miller-leader-baseball-union-dies/6iLvGYNtSiBZGPZT5zXFGJ/story.html"
+                             class="imageLink"><img src="http://cache.boston.com/bonzai-fba/Globe_Photo/2012/11/27/100miller__1354034540_7414.jpg" title="First MLBPA boss Marvin Miller dies" height="100" width="100" alt="First MLBPA boss Marvin Miller dies" border="0" /></a><h3><a
+    href="http://www.boston.com/sports/baseball/2012/11/27/marvin-miller-leader-baseball-union-dies/6iLvGYNtSiBZGPZT5zXFGJ/story.html">First MLBPA boss<br> Marvin Miller dies</a></h3><div class="tt">
+<span>The man who brought baseball into the free agency era passed away Friday in New York.</span> </div><div
     class="cf"></div></div>
-<div class="padTop10"></div>
 
 
-<ul class="linklist"><li data-vr-contentbox=""><a href="http://www.boston.com/sports/baseball/2012/11/27/marvin-miller-leader-baseball-union-dies/6iLvGYNtSiBZGPZT5zXFGJ/story.html"
-   class="bold">Ex-MLBPA boss Marvin Miller dies</a>
+<ul class="linklist"><li data-vr-contentbox=""><a href="http://www.boston.com/sports/colleges/football/2012/11/27/frank-spaziani-known-for-his-loyalty/wJZXSFZXuDWQnIz8gRQneM/story.html"
+   class="bold">Spaziani was loyal through the end</a>
 </li><li data-vr-contentbox=""><a href="http://www.bostonglobe.com/sports/2012/11/27/boston-college-athletic-director-brad-bates-begans-football-coaching-search/k1wmmjbkWn6W2TVQM3Z3OK/story.html"
    class="bgcom bold">Gasper: No permanent solution for BC</a>
 </li><li data-vr-contentbox=""><a href="http://www.boston.com/sports/football/patriots/2012/11/26/patriots-jermaine-cunningham-suspended-for-using-performance-enhancing-drugs/8liSgrcpdujH1dWumki3uL/story.html"
    class="bold">NFL bans Patriots' Cunningham for PEDs</a>
+</li><li data-vr-contentbox=""><span class="leadIn">Pictures </span><a
+    href="http://www.boston.com/sports/athletes-and-performance-enhancing-drugs/a4QAIF6g9kGW6GzMYY8hcP/gallery.html"
+    class="bold">Athletes connected with PEDs</a>
 </li><li data-vr-contentbox=""><a href="http://www.boston.com/sports/football/patriots/2012/11/27/miami-rookie-ryan-tannehill-impresses-patriots-coach-bill-belichick/CqVjCmQd7aE6URnvh4YhSI/story.html"
    class="bold">Notebook: Patriots size up Miami QB</a>
-</li><li data-vr-contentbox=""><a href="http://www.boston.com/sports/football/2012/11/26/newton-leads-panthers-past-eagles/4ZlampMAW2sMg4x0nh0VzK/story.html"
-   class="bold">NFL: Newton lifts Panthers over Eagles</a>
 </li><li data-vr-contentbox=""><a href="http://www.boston.com/sports/basketball/celtics/2012/11/26/sullinger-bass-work-help-the-celtics-improve-their-rebounding-numbers/Ix7Ll2jrwWQduam8mDwQJP/story.html"
    class="bold">Celtics rebounding starting to get better</a>
 </li><li data-vr-contentbox=""><a href="http://www.boston.com/sports/baseball/redsox/2012/11/27/mike-napoli-will-next-meet-with-texas/89QpRoTDhmkV1C4Sqv9AHI/story.html"
@@ -506,7 +581,7 @@ deals</a></li>
                             class="spcrGif" alt="" /></div>
 <div class="img100h3Left"><h3><a
     href="http://www.boston.com/metrodesk/2012/11/27/investigators-trying-determine-fires-quincy-and-hanson-are-linked-suspected-arson-spree/YRBwFGMS8Hf1DquGsjsUCL/story.html">Morning fires connected to arson spree?</a></h3><div class="tt">
-<span>Fires in Quincy and Hanson could be the latest in a string of arson fires that has hit at least six communities over the past five weeks.</span>  <span class="attr">(Boston Globe, 9:20 a.m.)</span></div><div
+<span>Fires in Quincy and Hanson could be the latest in a string of arson fires that has hit at least six communities over the past five weeks.</span>  <span class="attr">(Boston Globe, 11:31 a.m.)</span></div><div
     class="cf"></div></div>
 <div class="dotted1px"><img src="http://cache.boston.com/universal/site_graphics/spcr.gif"
                             class="spcrGif" alt="" /></div>
@@ -1029,7 +1104,7 @@ deals</a></li>
 
 <ul class="linklist"><li data-vr-contentbox=""><a href="http://www.boston.com/business/news/2012/11/27/state-street-corp-deposits-nearly-double/aMEZscTsmyz1GDzhiaUFOK/story.html"
    class="bold">State Street bank deposits nearly double</a>
-</li><li data-vr-contentbox=""><a href="http://www.boston.com/yourtown/news/newton/2012/11/two_elderly_pedestrians_hit_in.html"
+</li><li data-vr-contentbox=""><a href="http://www.boston.com/yourtown/news/newton/2012/11/two_drivers_cited_after_elderl.html"
    class="bold">Two elderly people struck by cars in Newton</a>
 </li><li data-vr-contentbox=""><a href="http://www.boston.com/businessupdates/2012/11/27/wbur-acquisition-would-bring-its-radio-programming-martha-vineyard-and-much-nantucket-and-cape-cod/SSDovXEAUu6eZOAdt0hanJ/story.html"
    class="bold">WBUR programming coming to Cape, islands</a>
@@ -1773,14 +1848,18 @@ Head out to the newly redesigned Bradenton Riverwalk Dec. 1 for the inaugural Br
       
 
 <div class="simpleTC" data-vr-contentbox=""><div class="img178h3left"><div class="imgCapCred"><a
-    href="http://www.boston.com/travel/explorene/blogs/packup/2012/11/holiday_hotel_packages.html"
-    class="imageLink"><img src="http://cache.boston.com/bonzai-fba/Globe_Photo/2012/11/27/barn__1354018931_9099.jpg" title="Holiday hotel packages" height="105" width="178" alt="Holiday hotel packages" border="0" /></a>
+    href="http://www.boston.com/travel/new-england/2012/11/25/santa-may-have-his-sleigh-but-freeport-shoppers-have-the-train/sRvxNR0TvBmSkymyAC0LPL/story.html"
+    class="imageLink"><img src="http://cache.boston.com/bonzai-fba/Globe_Photo/2012/11/27/freeport__1354034782_6782.jpg" title="A Freeport expedition by train" height="105" width="178" alt="A Freeport expedition by train" border="0" /></a>
   <div class="cf"></div></div><h3><a
-    href="http://www.boston.com/travel/explorene/blogs/packup/2012/11/holiday_hotel_packages.html">Holiday hotel packages</a></h3><div class="tt">
-<span>Still looking for that perfect holiday escape? Stay close to home and take part in some of these hotel packages perfect for the holiday season.</span> </div><div
-    class="cf"></div></div>
+    href="http://www.boston.com/travel/new-england/2012/11/25/santa-may-have-his-sleigh-but-freeport-shoppers-have-the-train/sRvxNR0TvBmSkymyAC0LPL/story.html">A Freeport expedition by train</a></h3><div class="tt">
+<span>If you want to do some outlet shopping in a place where the merchants are glad to see you, head to Freeport, Maine. </span> </div></div>
 
 
+
+<ul class="linklistInline"> 
+<li><a href="http://www.boston.com/travel/explorene/maine/articles/2012/04/29/bring_a_fishing_pole_not_a_shopping_list/"
+   class="bold">Freeport without a shopping list</a>
+</li></ul>
 
 
 </div>
@@ -1830,6 +1909,8 @@ Head out to the newly redesigned Bradenton Riverwalk Dec. 1 for the inaugural Br
 
  
 <a href="http://www.boston.com/travel/2012/11/21/cookbooks-remind-you-your-travels/kotR914XdnFC5wa2yP1abM/story.html">Cookbooks to remind you of your travels</a>
+&nbsp;|&nbsp;
+<a href="http://www.boston.com/travel/explorene/blogs/packup/2012/11/holiday_hotel_packages.html">Holiday hotel packages</a>
 &nbsp;|&nbsp;
 <span class="leadIn">pictures </span><a
     href="http://www.boston.com/travel/new-england/bdc-vintage-ski-photos-gallery/4BPeQHM4T5GZWrGSSBSvIM/gallery.html?pg=1&amp;t=150&amp;cp=15">Diamond jubilees in NH</a>
@@ -2128,7 +2209,7 @@ s.tl(this,'o','RadioBDC Player Launch - Homepage Widget');">
 	Listen Live</a>
 <div id="now-playing-well">
   <div class="scrollMeAway">
-    <span class="np-song-title">Knock Me Down</span> | <span class="np-song-artist">Red Hot Chili Peppers</span>
+    <span class="np-song-title">The Reeling</span> | <span class="np-song-artist">Passion Pit</span>
 
   </div>
 </div>
@@ -2260,7 +2341,7 @@ s.tl(this,'o','RadioBDC Player Launch - Homepage Widget');">
             <div id="mPop"><!--passthru--><div class="hslice" id="mostpopular"><span class="entry-title" style="display:none;">Boston.com Most Emailed</span><a rel="entry-content" href="http://www.boston.com/partners/ieslice/mostpopular.html" style="display:none;">Subscribe to Slice</a><a rel="bookmark" href="http://www.boston.com/?camp=misc:on:mostpopslice:bookmark" target="_blank" style="display:none;">Bookmark Boston.com Most Emailed</a><span class="ttl" style="display:none;">120</span>
 	<div class="bluePad">
         <h3 class="sectionHeader"><a href="http://tools.boston.com/pass-it-on/popular?time=hour&p1=MEWell_See_Full_List">MOST E-MAILED</a></h3>
-        <!--passthru--><ol class="linklist"><li class="up"><a href="http://www.boston.com/whitecoatnotes/2012/11/26/joseph-murray-who-performed-first-successful-organ-transplant-dies/ug9Npw3xfzaUtSyEz7pQPL/story.html?p1=Well_MostPop_Emailed1">Dr. Joseph E. Murray, who performed first successful organ transplant, dies at 93</a></li><li class="down"><a href="http://www.boston.com/ae/celebrity/blog/popradar/2012/11/angus_t_jones_star_of_two_and_a_half_men_calls_the_show_filth.html?p1=Well_MostPop_Emailed2">'Two and a Half Men' star Angus T. Jones calls the show 'filth' - Pop Radar - Boston.com</a></li><li class="up"><a href="http://www.boston.com/jobs/news/2012/11/27/mass-residents-could-lose-unemployment-benefits/U39URc8oqjrQNT37CPtdaJ/story.html?p1=Well_MostPop_Emailed3">45,000 Mass. residents set to lose unemployment benefits</a></li><li class="down"><a href="http://www.boston.com/businessupdates/2012/11/27/october-single-family-home-sales-jump-massachusetts-the-warren-group-says/0NkMqvqjcIvkhqfX7cG1yK/story.html?p1=Well_MostPop_Emailed4">October single-family home sales jump 21% in Massachusetts, the Warren Group says </a></li><li class="up"><a href="http://www.boston.com/business/news/2012/11/27/state-street-corp-deposits-nearly-double/aMEZscTsmyz1GDzhiaUFOK/story.html?p1=Well_MostPop_Emailed5">State Street Corp. deposits nearly double</a></li><li class="down"><a href="http://www.boston.com/news/nation/2012/11/27/from-victim-survivor-leader-former-sex-trafficking-victim-speaks-out/CA6aLIMZRBXURSmrIsniXN/story.html?p1=Well_MostPop_Emailed6">From victim, to survivor, to leader, a former sex trafficking victim speaks out</a></li><li class="up"><a href="http://www.boston.com/sports/columnists/wilbur/2012/11/mark_sanchez_is.html?p1=Well_MostPop_Emailed7">Mark Sanchez is the butt of the joke for the Jets</a></li></ol>
+        <!--passthru--><ol class="linklist"><li class="up"><a href="http://www.boston.com/whitecoatnotes/2012/11/26/joseph-murray-who-performed-first-successful-organ-transplant-dies/ug9Npw3xfzaUtSyEz7pQPL/story.html?p1=Well_MostPop_Emailed1">Dr. Joseph E. Murray, who performed first successful organ transplant, dies at 93</a></li><li class="down"><a href="http://www.boston.com/ae/celebrity/blog/popradar/2012/11/angus_t_jones_star_of_two_and_a_half_men_calls_the_show_filth.html?p1=Well_MostPop_Emailed2">'Two and a Half Men' star Angus T. Jones calls the show 'filth' - Pop Radar - Boston.com</a></li><li class="up"><a href="http://www.boston.com/news/nation/2012/11/27/from-victim-survivor-leader-former-sex-trafficking-victim-speaks-out/CA6aLIMZRBXURSmrIsniXN/story.html?p1=Well_MostPop_Emailed3">From victim, to survivor, to leader, a former sex trafficking victim speaks out</a></li><li class="down"><a href="http://www.boston.com/businessupdates/2012/11/27/october-single-family-home-sales-jump-massachusetts-the-warren-group-says/0NkMqvqjcIvkhqfX7cG1yK/story.html?p1=Well_MostPop_Emailed4">October single-family home sales jump 21% in Massachusetts, the Warren Group says </a></li><li class="up"><a href="http://www.boston.com/jobs/news/2012/11/27/mass-residents-could-lose-unemployment-benefits/U39URc8oqjrQNT37CPtdaJ/story.html?p1=Well_MostPop_Emailed5">45,000 Mass. residents set to lose unemployment benefits</a></li><li class="down"><a href="http://www.boston.com/business/news/2012/11/27/state-street-corp-deposits-nearly-double/aMEZscTsmyz1GDzhiaUFOK/story.html?p1=Well_MostPop_Emailed6">State Street Corp. deposits nearly double</a></li><li class="up"><a href="http://www.boston.com/metrodesk/2012/11/26/vegas-mogul-steve-wynn-pursuing-everett-casino-site/qEk3nfxtuLzgZwBXsk9P4N/story.html?p1=Well_MostPop_Emailed7">Vegas mogul Steve Wynn pursuing Everett casino site </a></li></ol>
 
         <!--div class="leadOut"><a href="http://tools.boston.com/pass-it-on/popular?time=hour&p1=MEWell_See_Full_List">See full list</a></div-->
    </div>
