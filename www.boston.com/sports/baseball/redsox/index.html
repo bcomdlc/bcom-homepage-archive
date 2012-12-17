@@ -807,7 +807,7 @@ OAS_AD('CENTRAL');
 <div class="subSectionHeader">Major League Baseball news</div>
 <div class="dotted1px"><img src="http://cache.boston.com/universal/site_graphics/spcr.gif"
                             class="spcrGif" alt="" /></div>
-<!--passthru--><!-- [      52928#] /Boston/Queries/Export-Bonzai/Sports/Red Sox-Homepage Headlines.query [QueryProxyImpl:EOM::Query, 1.0.1739701002] -->
+<!--passthru--><!-- [      15228#] /Boston/Queries/Export-Bonzai/Sports/Red Sox-Homepage Headlines.query [QueryProxyImpl:EOM::Query, 1.0.1739701002] -->
 
 <div class="tease">
 	<ul class="bulleted">
@@ -1256,7 +1256,7 @@ OAS_AD('SPONSOR6');
     return;
   }
 
-  var pluckEntries = pluckEntries || [];
+  //var pluckEntries = pluckEntries || [];
 
   if (typeof pluckCats != 'undefined' && pluckCats == 'MT Blog')
      {
@@ -1275,12 +1275,10 @@ OAS_AD('SPONSOR6');
        script.src   = "http://www.boston.com/js/ugc-comments.js?v=6";
        document.body.appendChild(script);
     }
-  else if(pluckEntries.length>0){
-    var script = document.createElement('script');
-    script.type = "text/javascript";
-    script.src = "http://www.boston.com/js/ugc-blog-index.js?v=1";
-    document.body.appendChild(script);
-  }
+ var script = document.createElement('script');
+ script.type = "text/javascript";
+ script.src = "http://www.boston.com/js/ugc-blog-index.js?v=1";
+ document.body.appendChild(script);
 
 
 </script>
