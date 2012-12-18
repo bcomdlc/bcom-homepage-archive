@@ -202,7 +202,7 @@ mboxCreate('bc_globalMbox','mboxPageValue=0.86','pageType=Section Folder','path=
   <div id="now-playing-header">
     <div class="scrollMeAway">
       <script>var radioType = 'none'</script>
-      <!--passthru--><span class="np-song-title">Freedom At 21</span> | <span class="np-song-artist">Jack White</span>
+      <!--passthru--><span class="np-song-title">White Winter Hymnal</span> | <span class="np-song-artist">Fleet Foxes</span>
 
       <a class="listen-live imageLink"
 	 href="http://www.boston.com/ae/radio/player/"
@@ -767,7 +767,7 @@ OAS_AD('FEATURE');
 
 <div class="simpleTC" data-vr-contentbox=""><h3 class="sectionHeader"><h3 class="titleCase sectionHeader">National politics: Latest news</h3></h3>
 <div class="padTop10"></div>
-<!--passthru--><!-- [       2625#] /Boston/Queries/Export-Bonzai/News/Politics.query [QueryProxyImpl:EOM::Query, 1.0.1919057730] -->
+<!--passthru--><!-- [      16180#] /Boston/Queries/Export-Bonzai/News/Politics.query [QueryProxyImpl:EOM::Query, 1.0.1919057730] -->
 
 <div class="tease">
 	<ul>
@@ -775,7 +775,7 @@ OAS_AD('FEATURE');
 			<!-- DEBUG: Status: 1, Object: 34f7d364-4932-11e2-9306-c1529ce3062e, Instance: 34f7d364-4932-11e2-9306-c1529ce3062e, Headline: Leahy sworn in as president pro tempore of Senate -->
 			<li>
 			<h2><a href="/news/politics/2012/12/18/leahy-sworn-president-pro-tempore-senate/umXOghyjrfMiBrdNNY3AZJ/story.html">Leahy sworn in as president pro tempore of Senate</a></h2>
-			<p>WASHINGTON (AP) -- Democratic Sen. Patrick Leahy of Vermont was sworn in Tuesday as president pro tempore of the Senate. <span class="source">(  &nbsp; 12/18/2012 1:33 PM )</span></p>
+			<p>WASHINGTON (AP) -- Democratic Sen. Patrick Leahy of Vermont was sworn in Tuesday as president pro tempore of the Senate. <span class="source">(  &nbsp; 12/18/2012 1:46 PM )</span></p>
 		</li>
 			<!-- DEBUG: Status: 2, Object: 3db4fc5c-4716-11e2-bf87-0a9a922eaae6, Instance: 3db4fc5c-4716-11e2-bf87-0a9a922eaae6, Headline: Obama will travel Sunday to Newtown, Conn., -->
 			<!-- DEBUG: Status: 2, Object: 3db4fc5c-4716-11e2-bf87-0a9a922eaae6, Instance: 3db4fc5c-4716-11e2-bf87-0a9a922eaae6, Headline: Obama will travel Sunday to Newtown, Conn. -->
@@ -1074,6 +1074,8 @@ OAS_AD('SPONSOR6');
     return;
   }
 
+  var pluckEntries = pluckEntries || [];
+
   if (typeof pluckCats != 'undefined' && pluckCats == 'MT Blog')
      {
        uuid = pluckID;
@@ -1091,10 +1093,12 @@ OAS_AD('SPONSOR6');
        script.src   = "http://www.boston.com/js/ugc-comments.js?v=6";
        document.body.appendChild(script);
     }
- var script = document.createElement('script');
- script.type = "text/javascript";
- script.src = "http://www.boston.com/js/ugc-blog-index.js?v=1";
- document.body.appendChild(script);
+  else if(pluckEntries.length>0){
+    var script = document.createElement('script');
+    script.type = "text/javascript";
+    script.src = "http://www.boston.com/js/ugc-blog-index.js?v=1";
+    document.body.appendChild(script);
+  }
 
 
 </script>
