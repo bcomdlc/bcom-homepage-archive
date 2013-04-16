@@ -179,7 +179,7 @@ if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+
                 <div class="span4">
 		  <!--passthru-->
 <div id="homepageWeather" class="weather03 weatherGeneric">
-  <div class="current-temp">42&deg;</div>
+  <div class="current-temp">45&deg;</div>
   <div class="infoholder">
     <div class="current-weather">Partly sunny</div>
     <div class="weather-links">
@@ -728,7 +728,7 @@ deals</a></li>
 
 </div>
 </div></div>
-<div class="padTop10"></div>
+<div class="padTop16"></div>
 <div class="img100h3Left"><h3><a
     href="http://www.boston.com/news/specials/share_your_thoughts_and_prayers_Copley_explosions/">Share your thoughts</a></h3><div class="tt">
 <span>Send wishes, prayers, and thoughts to victims and the city of Boston. </span> </div>
@@ -770,6 +770,13 @@ deals</a></li>
 
 </div>
 
+<div class="padTop16"></div>
+<div class="img100h3Left"><h3><a
+    href="https://docs.google.com/forms/d/1r2dbf7q2sIiiQWynPNgH74qNeheNycTyk7hXue9AJhs/viewform">Need a place to stay? Fill out this form</a></h3><div class="tt">
+<span>If you're in town after the Marathon and need a place to stay, fill out this form. <a href="https://docs.google.com/forms/d/1dqIKVq6IqX4BVXqOW_a9-qmXt1KJ_4Nu3NPNnC1g1mw/viewform" target="new" style="font-family:arial,helvetica,sans-serif; font-weight:bold; font-size:9pt;">Have a place to offer?</a></span> </div>
+<div class="cf"></div>
+
+</div>
 </div>
   <div class="cf"></div>
 </div>
@@ -780,25 +787,60 @@ deals</a></li>
     </div>
     <div class="cols5">
       
-      <div class="padTop16"></div>
-
-      
 
 
 
 <div class="simpleTC">
-<div class="img100h3Left"><h3><a
-    href="http://live.boston.com/Event/Live_blog_Explosion_in_Copley_Square">Live Blog: Boston Marathon bombings</a></h3><div class="tt">
-<span>Up-to-the-minute news and information surrounding yesterday's deadly attack at Copley Square.</span> </div>
-<div class="cf"></div>
+<script src='http://cache.boston.com/multimedia/graphics/js/SLRecentPostsv1.js'></script>
+<script src='http://cache.boston.com/multimedia/graphics/js/jquery.truncator.js'></script>
+<script src='http://embed.scribblelive.com/modules/lib/addons.js?id=93805'></script>
+<link rel='stylesheet' href='http://cache.boston.com/multimedia/graphics/css/scribble-live-widget.css'></link>
+
+<script>
+	$(function() {
+		var ScribbleLiveInstance = new RecentPosts({
+			APIToken: 'QqJpAOWH',
+			EventId: '93805',
+			WhereToAddPosts: 'RecentPostsList',
+			TotalPostsToShow: 10,
+			ShowImages: true,
+			ShowVideos: true,
+			ShowAudio: false,
+			DrawPostsCallback: function() {
+				$('.RecentPostsWidget .Content').truncate({max_length: 140, more: '...more', less: 'less'});
+				$('.RecentPostsWidget .Content').width(234);
+				$('.RecentPostsWidget .Meta').width(234);
+				$('#RecentPostsList .RecentPostsWidget').height(250);
+			}
+		});
+
+		$('.scribbleLiveContainer').width(329);
+	});
+
+
+</script>
+
+<div class='scribbleLiveContainer'>
+
+    <div class="scribble-head-container">
+					<div class="scribble-controls">
+						<div id="scribble-prev-btn" class="scribble-btn scribble-prev scribble-disabled">Back  | </div> 
+						<div id="scribble-next-btn" class="scribble-btn scribble-next">Next</div> 
+					</div>
+					<h3><a href="http://live.boston.com/Event/Live_blog_Explosion_in_Copley_Square">Boston bombing updates</a></h3>
+				</div>
+
+    <ul id='RecentPostsList'></ul>
 
 </div>
+<div class="padTop16"></div>
 
 </div>
 
 
       <div class="padTop16"></div>
 
+      
       
 
 <div class="grayBox"><h3>TODAY</h3>
@@ -828,7 +870,12 @@ deals</a></li>
 
 
 
-<ul class="linklist"><li><a href="http://www.boston.com/metrodesk/2013/04/15/security-will-the-rule-boston-tuesday/IefALoWKnvlsdnFy88g01K/story.html"
+<ul class="linklist"><li><span class="leadIn">The Big Picture </span><a
+    href="http://www.boston.com/bigpicture/2013/04/terror_at_the_boston_marathon.html"
+    class="bold">Terror at the Marathon</a>
+</li><li><a href="http://www.boston.com/news/local/massachusetts/2013/04/15/the-year-old-runner-behind-the-boston-photo/yRMVAvA2QomIFT63hlDCyK/story.html"
+   class="bold">78-year-old runner in iconic photo</a>
+</li><li><a href="http://www.boston.com/metrodesk/2013/04/15/security-will-the-rule-boston-tuesday/IefALoWKnvlsdnFy88g01K/story.html"
    class="bold">Security will be the rule for Boston on Tuesday</a>
 </li><li>
 
@@ -841,38 +888,6 @@ deals</a></li>
 </span>
 </li><li><a href="http://www.boston.com/news/local/new-hampshire/2013/04/16/state-police-increase-statehouse-area-security/kK4PKPfrZKar7nloZvYXwK/story.html"
    class="bold">N.H. State Police increase Statehouse area security</a>
-</li></ul>
-
-</div>
-
-
-      <div class="padTop16"></div>
-
-      
-
-
-
-<div class="simpleTC" data-vr-contentbox=" ">
-
-			  
-			  <div class="img329h3above">
-			  	<div class="overline">The Big Picture </div>
-				<h3><a href="http://www.boston.com/bigpicture/2013/04/terror_at_the_boston_marathon.html">Terror at the Boston Marathon</a></h3>
-				<div class="imgCapCred"><a
-    href="http://www.boston.com/bigpicture/2013/04/terror_at_the_boston_marathon.html"
-    class="imageLink"><img src="http://cache.boston.com/bonzai-fba/Globe_Photo/2013/04/15/runnerdown__1366080489_4216-1.jpg" title="Terror at the Boston Marathon" height="190" width="329" alt="Terror at the Boston Marathon" border="0" /></a>
-  <span class="attr">(John Tlumacki/Globe Staff)</span><div class="cf"></div></div>
-				<div class="tt">
-<span> </span> </div>
-<div class="cf"></div>
-
-
-			</div>
-
-
-
-
-<ul class="linklist"><li><a href="http://www.boston.com/news/local/massachusetts/2013/04/15/the-year-old-runner-behind-the-boston-photo/yRMVAvA2QomIFT63hlDCyK/story.html">The 78-year-old runner behind the Boston photo</a>
 </li></ul>
 
 </div>
@@ -905,15 +920,6 @@ deals</a></li>
 
 </div>
 
-
-      <div class="padTop16"></div>
-
-      <div class="img100h3Left"><h3><a
-    href="https://docs.google.com/forms/d/1r2dbf7q2sIiiQWynPNgH74qNeheNycTyk7hXue9AJhs/viewform">Need a place to stay? Fill out this form</a></h3><div class="tt">
-<span>If you're in town after the Marathon and need a place to stay, fill out this form. <a href="https://docs.google.com/forms/d/1dqIKVq6IqX4BVXqOW_a9-qmXt1KJ_4Nu3NPNnC1g1mw/viewform" target="new" style="font-family:arial,helvetica,sans-serif; font-weight:bold; font-size:9pt;">Have a place to offer?</a></span> </div>
-<div class="cf"></div>
-
-</div>
 
       
     </div>
@@ -2178,12 +2184,11 @@ OAS_AD('LOGO6');
 
 <div class="simpleTC" data-vr-contentbox=" ">
 <div class="img178h3left"><div class="imgCapCred"><a
-    href="http://www.bankrate.com/finance/taxes/rich-famous-and-tussling-with-the-tax-man-1.aspx?pid=p:bos"
-    class="imageLink"><img src="http://cache.boston.com/bonzai-fba/Third_Party_Photo/2013/04/15/8-snipes__1366029423_8408.jpg" title="Rich, famous and tussling with the taxman" height="105" width="178" alt="Rich, famous and tussling with the taxman" border="0" /></a>
+    href="http://www.boston.com/business/personal-finance/2013/04/15/irs-boston-area-taxpayers-will-get-time-taxes/C9Akds6d2ZS4TwCoqBtVyN/story.html"
+    class="imageLink"><img src="http://cache.boston.com/bonzai-fba/Third_Party_Photo/2013/04/16/2-data__1366114291_3584.jpg" title="IRS: Boston-area taxpayers will get time on taxes" height="105" width="178" alt="IRS: Boston-area taxpayers will get time on taxes" border="0" /></a>
   <div class="cf"></div></div><h3><a
-    href="http://www.bankrate.com/finance/taxes/rich-famous-and-tussling-with-the-tax-man-1.aspx?pid=p:bos">Rich, famous and tussling with the taxman</a></h3><div class="tt">
-<span>Headlines that proclaim a star's tax troubles often spark a firestorm of public scorn. How dare our heroes not pay their fair share when their cup runneth over!
-</span> </div>
+    href="http://www.boston.com/business/personal-finance/2013/04/15/irs-boston-area-taxpayers-will-get-time-taxes/C9Akds6d2ZS4TwCoqBtVyN/story.html">IRS: Boston-area taxpayers will get time on taxes</a></h3><div class="tt">
+<span>The Internal Revenue Service says Boston-area taxpayers need time to finish their tax returns without worry.</span> </div>
 <div class="cf"></div>
 
 </div>
@@ -2246,18 +2251,16 @@ OAS_AD('LOGO6');
 <ul class="linklistNoBullets"><li>
 
 
-<span data-vr-contentbox=" "><a href="http://www.boston.com/business/2013/04/12/life-good-builds-brand-based-optimism/fL2q1kcd8De53pn68thJhM/story.html">Life is good builds brand based on optimism</a>
+<span data-vr-contentbox=" "><a href="http://www.boston.com/business/2013/04/15/red-sox-new-balance-raise-money-for-veterans/qD9gmCwMg5OCKLNVRV2UjK/story.html">Red Sox, New Balance raise money for veterans</a>
 </span>&nbsp;|&nbsp;
-<span data-vr-contentbox=" "><a href="http://www.boston.com/business/technology/2013/04/15/dish-network-offering-buy-sprint-deal/kUDqqB11cTJj2otQch8jNO/story.html">Dish Network offering to buy Sprint in $25.5 billion deal</a>
+<span data-vr-contentbox=" "><a href="http://www.boston.com/business/2013/04/12/life-good-builds-brand-based-optimism/fL2q1kcd8De53pn68thJhM/story.html">Life is good builds brand based on optimism</a>
 </span>
 </li><li>
 
 
+<span data-vr-contentbox=" "><a href="http://www.boston.com/business/technology/2013/04/15/dish-network-offering-buy-sprint-deal/kUDqqB11cTJj2otQch8jNO/story.html">Dish Network offering to buy Sprint in $25.5 billion deal</a>
+</span>&nbsp;|&nbsp;
 <span data-vr-contentbox=" "><a href="http://www.boston.com/business/news/2013/04/12/kool-aid-man-gets-new-look-and-personality/NO0c6veM7RQXh7Xym26poO/story.html">'Kool-Aid Man' gets a new look</a>
-</span>&nbsp;|&nbsp;
-<span data-vr-contentbox=" "><a href="http://www.boston.com/business/news/2013/04/11/those-who-bought-upper-crust-franchises-now-trying-distance-themselves-from-troubled-chain/vriardHlxRizwzoK8Pg8WK/story.html">Upper Crust franchisees cutting ties</a>
-</span>&nbsp;|&nbsp;
-<span data-vr-contentbox=" "><a href="http://www.boston.com/business/news/2013/04/11/executive-perks-still-flow-the-corner-office-from-private-jet-use-event-tickets/FANxHKFlDzur0Sbq3lIsQJ/story.html">Executive perks persist</a>
 </span>
 </li></ul>
 
@@ -2392,10 +2395,10 @@ OAS_AD('LOGO6');
     <div class="cols7" data-vr-contentbox="">
       <div class="img178h3left"><div class="imgCapCred"><a
     href="http://www.boston.com/ae/movies/2013/04/14/mtv-movie-awards-highlights-and-wins/gyFrmRj0U8HJEpBpgvWeKL/pictures.html"
-    class="imageLink"><img src="http://cache.boston.com/bonzai-fba/Original_Photo/2013/04/15/kardashian__1366032611_2687-1.jpg" title="Kim Kardashian" height="105" width="178" alt="Kim Kardashian" border="0" /></a>
+    class="imageLink"><img src="http://cache.boston.com/bonzai-fba/Original_Photo/2013/04/15/bradpitt__1366048745_2351-2.jpg" title="Brad Pitt" height="105" width="178" alt="Brad Pitt" border="0" /></a>
   <div class="cf"></div></div><h3><a
-    href="http://www.boston.com/ae/movies/2013/04/14/mtv-movie-awards-highlights-and-wins/gyFrmRj0U8HJEpBpgvWeKL/pictures.html">Bumpin' with Kim Kardashian at MTV Movie Awards</a></h3><div class="tt">
-<span>"The Avengers" was the night's big winner, but Kim Kardashian and her baby bump were the talk of the evening. Check out scenes from the show and red carpet.</span> </div>
+    href="http://www.boston.com/ae/movies/2013/04/14/mtv-movie-awards-highlights-and-wins/gyFrmRj0U8HJEpBpgvWeKL/pictures.html">Brad Pitt in the mix at MTV Movie Awards</a></h3><div class="tt">
+<span>"The Avengers" was the night's big winner, but Brad made an appearance and Kim Kardashian and her baby bump were the talk of the evening. Check out scenes from the show and red carpet.</span> </div>
 <div class="cf"></div>
 
 </div>
@@ -2431,19 +2434,19 @@ OAS_AD('LOGO6');
 
 
 <ul class="linklistInline"> 
-<li data-vr-contentbox=" "><a href="http://www.boston.com/ae/restaurants/off-the-path-boston-area-restaurants/tY1A5cVFrEAEwpkFdhtBYJ/gallery.html">Hungry? Try these restaurants off the beaten path</a>
+<li data-vr-contentbox=" "><a href="http://www.boston.com/ae/celebrity/blog/popradar/2013/04/gisele_joins_instagram.html">Pop Radar: Gisele Bundchen joins Instagram</a>
 </li><li class="listPipe">|</li>
-<li data-vr-contentbox=" "><a href="http://www.boston.com/ae/movies/oscars/2013/02/22/did-you-know-these-things-about-ben-affleck/am1SOhRIs8sDaL54BchENM/story.html">Did you know these 14 things about Ben Affleck?</a>
+<li data-vr-contentbox=" "><span class="leadIn">Cheap Eats </span><a
+    href="http://www.boston.com/lifestyle/food/2013/04/09/bolivian-mixes-with-mexican-this-boston-taqueria/NmU6mmRaL3R0UjDujha9yO/story.html">Bolivian-Mexican mix in Eastie</a>
 </li></ul>
 </li>
   <li>
 
 
 <ul class="linklistInline"> 
-<li data-vr-contentbox=" "><a href="http://www.boston.com/ae/celebrity/blog/popradar/2013/04/gisele_joins_instagram.html">Pop Radar: Gisele Bundchen joins Instagram</a>
+<li data-vr-contentbox=" "><a href="http://www.boston.com/ae/restaurants/off-the-path-boston-area-restaurants/tY1A5cVFrEAEwpkFdhtBYJ/gallery.html">Hungry? Try these restaurants off the beaten path</a>
 </li><li class="listPipe">|</li>
-<li data-vr-contentbox=" "><span class="leadIn">Cheap Eats </span><a
-    href="http://www.boston.com/lifestyle/food/2013/04/09/bolivian-mixes-with-mexican-this-boston-taqueria/NmU6mmRaL3R0UjDujha9yO/story.html">Bolivian-Mexican mix in Eastie</a>
+<li data-vr-contentbox=" "><a href="http://www.boston.com/ae/movies/oscars/2013/02/22/did-you-know-these-things-about-ben-affleck/am1SOhRIs8sDaL54BchENM/story.html">Did you know these 14 things about Ben Affleck?</a>
 </li></ul>
 </li>
   <li>
@@ -2952,17 +2955,17 @@ Spend some of your time in Bradenton horsing around with the Lipizzan stallions-
 
 <div id="hp_deals">
 <link rel="stylesheet" type="text/css" href="http://cache.boston.com/partners/deals/widget/bdwStyles.css"><div class="blue-box" style="margin-top:20px;">
-<h3 class="sectionHeader"><a class="TodayDeal" data-posn="Widget" data-posntwo="banner" data-campaign="s" href="http://deals.boston.com/deal/32925/60-dollars-for-a-one-hour-massage-at-the-breathing-room">Today's Deal</a></h3>
+<h3 class="sectionHeader"><a class="TodayDeal" data-posn="Widget" data-posntwo="banner" data-campaign="s" href="http://deals.boston.com/deal/35444/the-davis-square-theatre-half-off">Today's Deal</a></h3>
 <a href="http://deals.boston.com" class="hp-deals-logo" data-posn="Widget" data-posntwo="banner" data-campaign="s"><img src="http://cache.boston.com/partners/deals/widget/boston_deals_tag_logo.png" alt="Boston Deals"></a><div class="widget" id="dailyDeals">
 <div class="content" id="todaysDeal">
-<p class="ddwMerchant push"><a data-campaign="s" data-posn="Widget" data-posntwo="deal" href="http://deals.boston.com/deal/32925/60-dollars-for-a-one-hour-massage-at-the-breathing-room">The Breathing Room</a></p>
-<img src="http://cache.boston.com/email/bostondeals/2013/32925_thebreathing/rsz_massage2_copy-267x157.jpg">
+<p class="ddwMerchant push"><a data-campaign="s" data-posn="Widget" data-posntwo="deal" href="http://deals.boston.com/deal/35444/the-davis-square-theatre-half-off">Mynnelou Productions, Inc.</a></p>
+<img src="http://cache.boston.com/email/bostondeals/2013/35444_mynnelouproductions/davissq_1-267x157.jpg">
 </div>
 <div id="static" class="floats">
-<p class="deal-description">The Breathing Room: $60 for a One-Hour Massage</p>
+<p class="deal-description">The Davis Square Theatre: Half off tickets to Frank McCourt&#8217;s &#8220;The Irish&#8230; and How They Got That Way&#8221;</p>
 <div id="email">
 <p class="emph">Get this deal:</p>
-<a data-campaign="s" data-posn="Widget" data-posntwo="visitdeal" href="http://deals.boston.com/deal/32925/60-dollars-for-a-one-hour-massage-at-the-breathing-room" id="buyNowBtn"><img src="http://cache.boston.com/partners/deals/widget/visit_deal_btn.png" alt="Buy Now"></a>
+<a data-campaign="s" data-posn="Widget" data-posntwo="visitdeal" href="http://deals.boston.com/deal/35444/the-davis-square-theatre-half-off" id="buyNowBtn"><img src="http://cache.boston.com/partners/deals/widget/visit_deal_btn.png" alt="Buy Now"></a>
 </div>
 <div id="ddwClear"></div>
 </div>
