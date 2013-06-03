@@ -1624,13 +1624,13 @@ OAS_AD('SPONSOR4');
        uuid = pluckID;
        var stylesheet = document.createElement("link");
        stylesheet.type = "text/css";
-       stylesheet.href = "http://www.boston.com/css/ugc-comments.css?v=1"
+       stylesheet.href = "http://www.boston.com/css/bcom-comments.css?v=1"
        stylesheet.rel = "stylesheet";
        document.body.appendChild(stylesheet);
 	$.getScript('http://www.boston.com/js/lib/tiny_mce/tiny_mce.js', function(data, textStatus, jqxhr) {
            var script   = document.createElement("script");
            script.type  = "text/javascript";
-           script.src   = "http://www.boston.com/js/ugc-comments.js?v=2";
+           script.src   = "http://www.boston.com/js/bcom-comments.js?v=1";
            document.body.appendChild(script);
         });   
 }
